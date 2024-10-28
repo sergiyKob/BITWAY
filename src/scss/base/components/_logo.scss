@@ -1,3 +1,7 @@
 .logo {
     flex-shrink: 0;
+
+    &__img {
+        width: clamp(6.25rem, 4.917rem + 5.93vw, 9.25rem);
+    }
 }

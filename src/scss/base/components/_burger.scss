@@ -1,5 +1,5 @@
 .burger {
-    --burger-color: #000;
+    --burger-color: var(--dark-500);
     --burger-color-focus: rgba(0, 0, 0, 0.3);
     --burger-focus-stroke-width: 3px;
     --burger-line-width: 30px;
@@ -8,7 +8,7 @@
 
     display: none;
 
-    @include tablet {
+    @include tablet-sm {
         display: block;
         position: relative;
         z-index: 100;

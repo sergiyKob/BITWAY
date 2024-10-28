@@ -1,15 +1,52 @@
 .nav {
+    @include tablet-sm {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        background-color: #8ccae6;
+        overflow-y: auto;
+        transform: translate3D(0, -100%, 0);
+        transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+        &.is-open {
+            transform: translateZ(0);
+        }
+    }
+
     &__list {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
+
+        @include tablet-sm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            font-size: 28px;
+        }
     }
 
     &__item {}
 
-    &__link {}
+    &__link {
+        transition: color var(--transition);
+
+        &:focus-visible {}
+
+        @include hover {
+            color: var(--primary-500);
+        }
+
+        &:active {}
+    }
 
     &__link--active {
-        text-decoration: underline;
+        color: var(--primary-500);
     }
 }

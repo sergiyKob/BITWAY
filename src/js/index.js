@@ -1,6 +1,6 @@
 
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();
 
 // import dropdown from './modules/dropdown.js';
 // dropdown();
