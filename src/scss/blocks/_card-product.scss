@@ -1,0 +1,119 @@
+.box {
+    padding: 30px;
+    background-color: var(--gray-5);
+}
+
+.card-product {
+    max-width: 360px;
+    background-color: var(--white-500);
+    padding: 20px;
+    border-radius: var(--rounded-lg);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.02), 0 10px 40px -4px rgba(16, 24, 40, 0.02);
+
+    &__top {
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    &__img {
+        border-radius: var(--rounded-md);
+
+        img {
+            background-color: var(--light-500);
+            border-radius: var(--rounded-md);
+        }
+    }
+
+    &__favourite {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        z-index: 2;
+        width: 32px;
+        height: 32px;
+        background: var(--white-80);
+        border-radius: var(--rounded-xs);
+        backdrop-filter: blur(20px);
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__title {
+        @include line-clamp(2);
+        font-family: var(--font-second);
+        margin-bottom: 10px;
+    }
+
+    &__link {}
+
+    &__price {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        color: var(--gray-500);
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 16px;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 34px;
+
+        &::before {
+            @include pseudo;
+            @include imgBg;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+        }
+
+        &--bed::before {
+            background-image: url('./../img/icons/bed.svg');
+        }
+
+        &--bath::before {
+            background-image: url('./../img/icons/bath.svg');
+        }
+
+        &--auto::before {
+            background-image: url('./../img/icons/auto.svg');
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: 34px 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+        padding-top: 16px;
+        border-top: 1px solid var(--gray-20);
+    }
+
+    &__avatar {}
+
+    &__name {
+        @include line-clamp(1);
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    &__action {}
+}
