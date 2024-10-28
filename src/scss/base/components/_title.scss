@@ -1,14 +1,19 @@
-.title-h1 {
+.title {
     font-weight: 700;
-    font-size: 48px;
-}
 
-.title-h2 {
-    font-weight: 700;
-    font-size: 32px;
-}
+    &--xl {
+        font-size: 60px;
+    }
 
-.title-h3 {
-    font-weight: 700;
-    font-size: 24px;
+    &--lg {
+        font-size: 40px;
+    }
+
+    &--md {
+        font-size: 24px;
+    }
+
+    &--sm {
+        font-size: 20px;
+    }
 }
