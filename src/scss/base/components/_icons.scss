@@ -5,4 +5,10 @@
     fill: currentColor;
     pointer-events: none;
     transition: fill var(--transition), stroke var(--transition), transform var(--transition);
+
+    &--heart,
+    &--share {
+        fill: transparent;
+        stroke: var(--dark-500);
+    }
 }
