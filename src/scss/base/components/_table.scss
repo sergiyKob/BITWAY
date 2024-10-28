@@ -1,0 +1,19 @@
+.table {
+    width: 100%;
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-bottom-width: 0;
+
+    th,
+    td {
+        padding: 6px 10px;
+        border: 1px solid #000000;
+        border-top-width: 0;
+        border-left-width: 0;
+    }
+
+    th:last-child,
+    td:last-child {
+        border-right-width: 0;
+    }
+}

@@ -1,0 +1,79 @@
+@mixin desktop() {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet-sm() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin mobile-sm() {
+    @media (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin line-clamp($lines: 1) {
+    @if $lines <=1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    @else {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@mixin hover {
+    @media (any-hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin checkbox-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+@mixin absolut-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin imgBg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

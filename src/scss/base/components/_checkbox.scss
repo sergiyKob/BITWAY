@@ -1,0 +1,65 @@
+.checkbox {
+    --color-text: red;
+    --color-bg: #fff;
+    --color-border: red;
+    --color-hover: red;
+    --color-focus: rgba(255, 0, 0, 0.3);
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: 12px;
+    color: var(--color-text);
+    user-select: none;
+    transition: color var(--transition);
+    cursor: pointer;
+
+    @include hover {
+        color: var(--color-hover);
+
+        .checkbox__custom-checkbox {
+            border: 2px solid var(--color-hover);
+        }
+    }
+
+    &__input {
+        @include checkbox-hidden;
+    }
+
+    &__input:checked+.checkbox__custom-checkbox {
+        background-color: var(--color-hover);
+        border: 2px solid var(--color-hover);
+
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__input:focus-visible+.checkbox__custom-checkbox {
+        box-shadow: 0 0 0 3px var(--color-focus);
+    }
+
+    &__custom-checkbox {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: var(--color-bg);
+        border: 2px solid var(--color-border);
+        border-radius: 5px;
+        transition: border var(--transition), background-color var(--transition);
+
+        &::before {
+            @include pseudo;
+            width: 13px;
+            height: 9px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('./../img/icons/checkmark.svg');
+            background-repeat: no-repeat;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition), visibility var(--transition);
+        }
+    }
+}

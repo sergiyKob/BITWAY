@@ -1,0 +1,21 @@
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/fontsAutoGen';
+@import './base/base';
+@import './base/containers';
+@import './base/utils';
+
+/* components */
+@import './base/components/nav';
+@import './base/components/mobile-nav';
+@import './base/components/burger';
+@import './base/components/icons';
+@import './base/components/btn';
+@import './base/components/accordion';
+@import './base/components/logo';
+
+
+/* Blocks */
+@import './blocks/*.scss';

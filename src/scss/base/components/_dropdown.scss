@@ -1,0 +1,111 @@
+.dropdown {
+    --color-text: #000;
+    --color-border: gray;
+    --color: blue;
+    --color-focus: red;
+    --color-bg: #EFF2F4;
+    --rounded: 5px;
+    --transition: 0.2s;
+    --focus: rgba(13, 110, 253, 0.3);
+
+    position: relative;
+    width: 250px;
+    line-height: 1;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        border: 1px solid var(--color-border);
+        border-radius: var(--rounded);
+        white-space: nowrap;
+        transition: background-color var(--transition), box-shadow var(--transition),
+            color var(--transition), opacity var(--transition), border-color var(--transition);
+
+        span {
+            pointer-events: none;
+        }
+
+        &.active {
+            .icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px var(--focus);
+        }
+
+        @include hover {
+            background-color: var(--color-bg);
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 110%;
+        z-index: 100;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid var(--color-border);
+        border-radius: var(--rounded);
+        box-shadow: 0 4px 10px 0 rgba(96, 96, 96, 0.2);
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition), visibility var(--transition);
+
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__list-item {
+        width: 100%;
+        text-align: left;
+        color: var(--color-text);
+        padding: 9px;
+        cursor: pointer;
+        transition: color var(--transition), background-color var(--transition),
+            opacity var(--transition);
+
+        &:focus {
+            color: var(--color);
+            background-color: var(--color-rgba-10);
+        }
+
+        @include hover {
+            background-color: var(--color-bg);
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    &__input {
+        border: 1px solid var(--color-border);
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &--secondary {
+        .dropdown__btn {
+            border: none;
+        }
+    }
+}

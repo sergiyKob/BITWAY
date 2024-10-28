@@ -1,0 +1,72 @@
+.burger {
+    --burger-color: #000;
+    --burger-color-focus: rgba(0, 0, 0, 0.3);
+    --burger-focus-stroke-width: 3px;
+    --burger-line-width: 30px;
+    --burger-line-height: 1.5px;
+    --burger-border-radius: 5px;
+
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: relative;
+        z-index: 100;
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: var(--burger-border-radius);
+        transition: box-shadow 0.2s;
+
+        &:focus-visible {
+            box-shadow: 0px 0px 0px var(--burger-focus-stroke-width) var(--burger-color-focus);
+        }
+
+        &__line {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            background-color: var(--burger-color);
+            width: var(--burger-line-width);
+            height: var(--burger-line-height);
+            transform: translateX(-50%);
+            transition: transform 0.2s;
+            border-radius: 30px;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: var(--burger-color);
+                width: var(--burger-line-width);
+                height: var(--burger-line-height);
+                right: 0;
+                transition: 0.2s;
+                border-radius: 30px;
+
+            }
+
+            &::before {
+                top: 10px;
+            }
+
+            &::after {
+                bottom: 10px;
+            }
+        }
+
+        &.is-active .burger__line {
+            background-color: transparent;
+        }
+
+        &.is-active .burger__line::before {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+
+        &.is-active .burger__line::after {
+            transform: rotate(45deg);
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: currentColor;
+    pointer-events: none;
+    transition: fill var(--transition), stroke var(--transition), transform var(--transition);
+}

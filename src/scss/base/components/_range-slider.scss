@@ -1,0 +1,78 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.range-slider {
+    --bg-static: #AFD0FF;
+    --bg-range: #0d6efd;
+    --rounded-range: 20px;
+    --bg-handle: #ffffff;
+    --width-handle: 20px;
+    --height-handle: 20px;
+    --rounded-handle: 100%;
+    --border-handle: 1px solid var(--bg-static);
+    --box-shadow-handle: 0 2px 4px 0 rgba(16, 0, 0, 0.1);
+    --input-color: #000;
+    --height-range: 4px;
+    //------------------------//
+
+    width: 100%;
+    padding-top: 16px;
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    &__input {
+        width: 100%;
+        color: var(--input-color);
+    }
+}
+
+.range-slider .noUi-target {
+    background: var(--bg-static);
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.range-slider .noUi-connect {
+    background: var(--bg-range);
+}
+
+.range-slider .noUi-horizontal {
+    height: var(--height-range);
+    border-radius: var(--rounded-range);
+}
+
+.range-slider .noUi-handle {
+    border: var(--border-handle);
+    border-radius: 0;
+    background: var(--bg-handle);
+    cursor: pointer;
+    box-shadow: none;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+.range-slider .noUi-horizontal .noUi-handle {
+    top: -8px;
+    width: var(--width-handle);
+    height: var(--height-handle);
+    border-radius: var(--rounded-handle);
+    box-shadow: var(--box-shadow-handle);
+}

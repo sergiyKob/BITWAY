@@ -1,0 +1,88 @@
+.btn {
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1;
+    text-align: center;
+    border-radius: var(--rounded-sm);
+    transition: background-color var(--transition), box-shadow var(--transition), opacity var(--transition), color var(--transition);
+    cursor: pointer;
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px var(--accent-30);
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+
+    @include hover {}
+
+
+    &--primary {
+        background-color: var(--primary-500);
+        color: var(--white-500);
+
+    }
+
+    &--outline {
+        color: var(--dark-500);
+        border-radius: var(--rounded-xs);
+        border: 1px solid var(--gray-20);
+    }
+
+
+    &--with-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    &--only-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    &--xl {
+        min-height: 56px;
+        min-width: 56px;
+        padding: 16px;
+    }
+
+    &--lg {
+        min-height: 50px;
+        min-width: 50px;
+        padding: 13px;
+    }
+
+    &--md {
+        min-height: 40px;
+        min-width: 40px;
+        padding: 10px;
+        font-size: 14px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &--sm {
+        min-height: 34px;
+        min-width: 34px;
+        padding: 8px;
+        font-size: 12px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &--full {
+        width: 100%;
+    }
+}

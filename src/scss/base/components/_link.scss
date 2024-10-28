@@ -1,0 +1,19 @@
+.link {
+    display: inline-block;
+    line-height: 1;
+    padding: 5px 10px;
+    background-color: lightcoral;
+    border-radius: 8px;
+    transition: box-shadow var(--transition), color var(--transition), opacity var(--transition),
+        background-color var(--transition);
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px var(--accent-30);
+    }
+
+    @include hover {}
+
+    &:active {
+        opacity: 0.75;
+    }
+}

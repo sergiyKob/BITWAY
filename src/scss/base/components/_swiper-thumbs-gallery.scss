@@ -1,0 +1,35 @@
+.swiper {
+    img {
+        cursor: pointer;
+    }
+}
+
+// ---- main Slider ----//
+
+.mySwiper2 {
+    width: 350px;
+    height: 450px;
+    margin-bottom: 5px;
+
+    .swiper-slide {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 350px;
+        height: 450px;
+    }
+}
+
+// ---- thumbsSlider ----//
+
+.mySwiper {
+    width: 350px;
+
+    .swiper-slide {
+        border: 2px solid transparent;
+    }
+}
+
+.swiper-slide-thumb-active {
+    border: 2px solid red !important;
+}

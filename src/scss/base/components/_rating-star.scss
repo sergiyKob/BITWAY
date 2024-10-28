@@ -1,0 +1,38 @@
+.rating-star {
+    position: relative;
+    width: 103px;
+    font-size: 0;
+    margin-right: 30px;
+    color: #d4cdc5;
+
+    &::after {
+        content: '★★★★★';
+        font-size: 20px;
+        // letter-spacing: 2px;  - spacing between stars
+    }
+
+    &__progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        color: orangered;
+
+        &::after {
+            content: '★★★★★';
+            font-size: 20px;
+            // letter-spacing: 2px;
+        }
+    }
+
+    &__num {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        font-size: 15px;
+        line-height: 1;
+        color: orangered;
+        transform: translateY(-50%);
+    }
+}
