@@ -1,6 +1,6 @@
 :root {
-    --font-main: 'Jost', sans-serif;
-    --font-second: 'Playfair Display', sans-serif;
+    --font-main: 'Jost', serif;
+    --font-second: 'Playfair Display', serif;
     --page-bg: var(--white-500);
     --text-color: var(--dark-500);
     --font-size: 16px;
@@ -92,13 +92,13 @@
     --color-option-4: #304fbe;
 
     // ----- Spacing ----- // 
-    --spacing-xs: 8px;
-    --spacing-sm: 16px;
-    --spacing-md: 24px;
-    --spacing-lg: 32px;
-    --spacing-xl: 40px;
-    --spacing-xxl: 48px;
-    --spacing-xxxl: 56px;
+    // --spacing-xs: 8px;
+    // --spacing-sm: 16px;
+    // --spacing-md: 24px;
+    // --spacing-lg: 32px;
+    // --spacing-xl: 40px;
+    // --spacing-xxl: 48px;
+    // --spacing-xxxl: 56px;
 
     // ----- border radius ----- //
     --rounded-xs: 5px;
