@@ -1,0 +1,29 @@
+.card-features {
+    max-width: 500px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-20);
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary-5);
+        margin-bottom: 16px;
+        border-radius: var(--rounded-sm);
+
+        svg {
+            fill: transparent;
+            stroke: var(--primary-500);
+        }
+    }
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__descr {
+        color: var(--gray-500);
+    }
+}
