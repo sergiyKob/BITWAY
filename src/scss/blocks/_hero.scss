@@ -1,5 +1,40 @@
 .hero {
-    padding: 50px 0;
+    position: relative;
+    padding: 50px 0 145px;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        @include pseudo;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        z-index: 0;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &::before {
+        background-image: url('./../img/decor/dots.svg');
+        width: 102px;
+        height: 201px;
+        right: 100px;
+        bottom: 85px;
+    }
+
+    &::after {
+        background-image: url('./../img/decor/circles.svg');
+        width: 347px;
+        height: 347px;
+        top: 80px;
+        right: -100px;
+    }
+
+    @include tablet {
+        padding: 20px 0;
+    }
 
     &__top {
         display: flex;
@@ -7,6 +42,17 @@
         justify-content: space-between;
         gap: 20px;
         margin-bottom: 50px;
+
+
+
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
@@ -17,15 +63,24 @@
 
     &__content {
         max-width: 460px;
+
+        @include tablet {
+            max-width: 800px;
+        }
     }
 
     &__text {
         font-size: 20px;
         margin-bottom: 30px;
+
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
     }
 
     &__btn {
-        min-width: 260px;
+        min-width: clamp(8.75rem, 5.288rem + 15.38vw, 16.25rem);
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -33,9 +88,11 @@
 
     &__img {
         @include imgBg;
+        position: relative;
+        z-index: 1;
         background-color: var(--gray-20);
         width: 100%;
-        height: 650px;
+        height: clamp(15.625rem, 4.087rem + 51.28vw, 40.625rem);
 
     }
 }

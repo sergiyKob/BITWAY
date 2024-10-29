@@ -77,3 +77,15 @@
         }
     }
 }
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 89;
+    background-color: var(--dark-20);
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
