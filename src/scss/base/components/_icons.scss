@@ -7,7 +7,8 @@
     transition: fill var(--transition), stroke var(--transition), transform var(--transition);
 
     &--heart,
-    &--share {
+    &--share,
+    &--location {
         fill: transparent;
         stroke: var(--dark-500);
     }

@@ -1,0 +1,141 @@
+.search {
+    max-width: 945px;
+    transform: translateY(-52px);
+    position: relative;
+    z-index: 90;
+
+    &__form {
+        width: 100%;
+        background-color: var(--primary-500);
+        padding: 20px;
+        border-radius: var(--rounded-sm);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 56px;
+        align-items: center;
+
+        @include tablet {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+        }
+    }
+
+    &__block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+
+        @include tablet {
+            column-gap: 10px;
+        }
+    }
+
+    &__icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background-color: var(--white-10);
+        border-radius: var(--rounded-full);
+
+        @include tablet {
+            width: 50px;
+            height: 50px;
+        }
+
+        svg {
+            stroke: var(--white-500);
+            fill: transparent;
+        }
+    }
+
+    &__label {
+        width: 100%;
+        padding-right: 16px;
+
+        @include tablet {
+            padding-right: 0;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        color: var(--white-500);
+        margin-bottom: 7px;
+        padding-left: 5px;
+    }
+
+    &__input {
+        width: 100%;
+        background-color: transparent;
+        color: var(--white-500);
+        padding: 5px;
+        border-radius: var(--rounded-xs);
+        transition: box-shadow var(--transition);
+
+        @include tablet {
+            padding: 10px 5px;
+        }
+
+        &::placeholder {
+            color: var(--white-500);
+            opacity: 0.5;
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 2px var(--white-500);
+        }
+
+        @include hover {}
+
+    }
+
+    &__dropdown {
+        position: absolute;
+        left: -20px;
+        top: calc(100% + 20px);
+        width: 100%;
+        background-color: var(--white-500);
+        padding: 20px 0;
+        border-radius: 0 0 var(--rounded-sm) var(--rounded-sm);
+        border: 1px solid #000;
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 23px;
+        padding: 13px 20px 13px 33px;
+        transition: background-color var(--transition),
+            opacity var(--transition);
+        cursor: pointer;
+
+        &:focus {}
+
+        @include hover {
+            background-color: var(--gray-20);
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    &__location {}
+
+    &__btn {
+        background-color: var(--white-500);
+
+        svg {
+            fill: var(--primary-500);
+        }
+    }
+}
