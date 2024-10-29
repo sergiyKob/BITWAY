@@ -1,0 +1,39 @@
+.benefits {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: end;
+
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &__content {
+        padding-bottom: 100px;
+
+        @include tablet {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        margin-bottom: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__img {
+        @include tablet {
+            display: none;
+        }
+    }
+}

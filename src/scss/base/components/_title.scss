@@ -1,12 +1,16 @@
 .title {
     font-weight: 700;
+    text-wrap: balance;
 
     &--xl {
+        font-family: var(--font-second);
         font-size: clamp(2rem, 1.192rem + 3.59vw, 3.75rem);
     }
 
     &--lg {
-        font-size: 40px;
+        font-family: var(--font-second);
+        font-size: clamp(1.75rem, 1.404rem + 1.54vw, 2.5rem);
+
     }
 
     &--md {
