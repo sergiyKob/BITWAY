@@ -10,11 +10,7 @@
     }
 
     &__content {
-        padding-bottom: 100px;
-
-        @include tablet {
-            padding-bottom: 50px;
-        }
+        padding-bottom: clamp(1.875rem, -0.144rem + 8.97vw, 6.25rem);
     }
 
     &__title {

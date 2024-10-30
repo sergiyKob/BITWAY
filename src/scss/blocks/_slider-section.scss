@@ -1,0 +1,46 @@
+.slider-section {
+    padding: clamp(1.875rem, 0.721rem + 5.13vw, 4.375rem) 0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        margin-bottom: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem);
+
+        @include mobile {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__title {
+        max-width: 640px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__btn {
+        background-color: var(--gray-5);
+
+        &:focus {}
+
+        @include hover {
+            background-color: var(--primary-500);
+
+            svg {
+                fill: var(--white-500);
+            }
+        }
+
+        &:active {}
+    }
+}

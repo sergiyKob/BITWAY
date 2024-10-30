@@ -1,228 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BITWAY | Main</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-</head>
-
-<body class="body">
-    <div class="wrapper">
-        <header class="header">
-    <div class="header__container container">
-        <a class="logo" href="#">
-            <img class="logo__img" src="./img/logo.svg" width="148" height="60" alt="logo bitway">
-        </a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link nav__link--active" href="#">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">About Us</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Properties</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Agents</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Blog</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
-        <button class="header__login btn btn--primary btn--lg" type="button">
-            Login
-        </button>
-        <button class="burger" type="button">
-            <span class="burger__line"></span>
-            <span class="sr-only">burger menu</span>
-        </button>
-    </div>
-</header>
-        <main class="main">
-            <section class="hero">
-    <div class="hero__top container">
-        <h1 class="hero__title title title--xl">
-            Let’s start search <br> for your dream home
-        </h1>
-        <div class="hero__content">
-            <p class="hero__text">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-            </p>
-            <a class="hero__btn btn btn--primary btn--xl" href="#">
-                Get Started
-            </a>
-        </div>
-    </div>
-
-    <div class="hero__img" style="background-image: url('./../img/hero/hero1.webp');">
-    </div>
-
-    <div class="container">
-        <div class="search">
-            <form class="search__form" action="#">
-                <div class="search__block">
-                    <div class="search__icon">
-                        <svg class="icon icon--location">
-                            <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
-                        </svg>
-                    </div>
-                    <label class="search__label">
-                        <span class="search__title title title--sm">Location</span>
-                        <input class="search__input" type="text" placeholder="California, United State" required>
-                    </label>
-                    <div class="search__dropdown">
-                        <ul class="search__list">
-                            <li class="search__item">
-                                <svg class="icon icon--location">
-                                    <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
-                                </svg>
-                                <span class="search__location">
-                                    California, United State
-                                </span>
-                            </li>
-                            <li class="search__item">
-                                <svg class="icon icon--location">
-                                    <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
-                                </svg>
-                                <span class="search__location">
-                                    Miami, United State
-                                </span>
-                            </li>
-                            <li class="search__item">
-                                <svg class="icon icon--location">
-                                    <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
-                                </svg>
-                                <span class="search__location">
-                                    New York, United State
-                                </span>
-                            </li>
-                            <li class="search__item">
-                                <svg class="icon icon--location">
-                                    <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
-                                </svg>
-                                <span class="search__location">
-                                    New York, United State
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="search__block">
-                    <div class="search__icon">
-                        <svg class="icon icon--coin-dollar">
-                            <use href="./img/svgsprite/sprite.symbol.svg#coin-dollar"></use>
-                        </svg>
-                    </div>
-                    <label class="search__label">
-                        <span class="search__title title title--sm">Price</span>
-                        <input class="search__input" type="text" placeholder="$1000 - $10,000">
-                    </label>
-                </div>
-
-                <div class="search__block">
-                    <div class="search__icon">
-                        <svg class="icon icon--location">
-                            <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
-                        </svg>
-                    </div>
-                    <label class="search__label">
-                        <span class="search__title title title--sm">Type of Property</span>
-                        <input class="search__input" type="text" placeholder="Apartment">
-                    </label>
-                </div>
-                <button class="search__btn btn btn--xl btn--only-icon" type="submit">
-                    <svg class="icon icon--search-normal">
-                        <use href="./img/svgsprite/sprite.symbol.svg#search-normal"></use>
-                    </svg>
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
-            <section class="benefits">
-    <div class="benefits__container container">
-        <div class="benefits__content">
-            <h2 class="benefits__title title title--lg">
-                Why should good house for you?
-            </h2>
-            <p class="benefits__descr">
-                Using it can make you sound like you have been studying english
-                for a long time. Here’s the challenge
-            </p>
-
-            <ul class="benefits__list">
-                <li class="benefits__item">
-                    <article class="card-benefits">
-                        <div class="card-benefits__icon">
-                            <svg class="icon icon--medal">
-                                <use href="./img/svgsprite/sprite.symbol.svg#medal"></use>
-                            </svg>
-                        </div>
-                        <h3 class="card-benefits__title title title--sm">
-                            Best Platform
-                        </h3>
-                        <p class="card-benefits__descr">
-                            Using it can make you sound like you have been studying english
-                            for a long time. Here’s the challenge
-                        </p>
-                    </article>
-                </li>
-                <li class="benefits__item">
-                    <article class="card-benefits">
-                        <div class="card-benefits__icon">
-                            <svg class="icon icon--home-setting">
-                                <use href="./img/svgsprite/sprite.symbol.svg#home-setting"></use>
-                            </svg>
-                        </div>
-                        <h3 class="card-benefits__title title title--sm">
-                            Guaranteed Service
-                        </h3>
-                        <p class="card-benefits__descr">
-                            Using it can make you sound like you have been studying english
-                            for a long time. Here’s the challenge
-                        </p>
-                    </article>
-                </li>
-                <li class="benefits__item">
-                    <article class="card-benefits">
-                        <div class="card-benefits__icon">
-                            <svg class="icon icon--badge-percent">
-                                <use href="./img/svgsprite/sprite.symbol.svg#badge-percent"></use>
-                            </svg>
-                        </div>
-                        <h3 class="card-benefits__title title title--sm">
-                            Verified Platform
-                        </h3>
-                        <p class="card-benefits__descr">
-                            Using it can make you sound like you have been studying english
-                            for a long time. Here’s the challenge
-                        </p>
-                    </article>
-                </li>
-            </ul>
-        </div>
-        <div class="benefits__img">
-            <picture>
-<source srcset="./img/benefits/man.webp 1x, ./img/benefits/man@2x.webp 2x" type="image/webp">
-<source srcset="./img/benefits/man.png 1x, ./img/benefits/man@2x.png 2x" type="image/png">
-<img src="./img/benefits/man.png" loading="lazy" width="570" height="800" alt="the man is smiling">
-</picture>
-        </div>
-    </div>
-</section>
-            <section class="slider-section bg-color">
+<section class="slider-section bg-color">
     <div class="container">
         <div class="slider-section__top">
             <h2 class="slider-section__title title title--lg">
@@ -248,11 +24,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -285,11 +57,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -327,11 +95,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -364,11 +128,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -406,11 +166,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -443,11 +199,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -485,11 +237,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -522,11 +270,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -564,11 +308,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -601,11 +341,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -643,11 +379,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -680,11 +412,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -722,11 +450,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -759,11 +483,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -801,11 +521,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -838,11 +554,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -880,11 +592,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -917,11 +625,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -959,11 +663,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -996,11 +696,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -1038,11 +734,7 @@
                     <article class="card-product">
                         <div class="card-product__top">
                             <a class="card-product__img" href="#" title="Luxury Apartment in California">
-                                <picture>
-<source srcset="./img/product/img-1.webp 1x, ./img/product/img-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/product/img-1.jpg 1x, ./img/product/img-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
-</picture>
+                                <img src="./../img/product/img-1.jpg" loading="lazy" width="326" height="266" alt="house">
                             </a>
                             <button class="card-product__favourite btn btn--only-icon" type="button">
                                 <svg class="icon icon--heart">
@@ -1075,11 +767,7 @@
                         </ul>
                         <div class="card-product__bottom">
                             <div class="card-product__avatar">
-                                <picture>
-<source srcset="./img/people/people-1.webp 1x, ./img/people/people-1@2x.webp 2x" type="image/webp">
-<source srcset="./img/people/people-1.jpg 1x, ./img/people/people-1@2x.jpg 2x" type="image/jpeg">
-<img src="./img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
-</picture>
+                                <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                             </div>
                             <div class="card-product__name">
                                 Wade Warren
@@ -1117,115 +805,3 @@
         </div>
     </div>
 </section>
-
-            <div class="overlay"></div>
-        </main>
-        <footer class="footer">
-    <div class="container">
-        <div class="footer__top">
-            <div class="footer__column">
-                <a class="footer__logo" href="#">
-                    <img src="./img/footer-logo.svg" width="123" height="50" alt="logo bitway">
-                </a>
-                <p class="footer__descr">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus
-                    felis vitae sit est quisque.
-                </p>
-            </div>
-
-            <div class="footer__column">
-                <h3 class="footer__title">
-                    About
-                </h3>
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">About us</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Blog</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Agents</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">New Property</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="footer__column">
-                <h3 class="footer__title">
-                    Service
-                </h3>
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Payment & Tax</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Features</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">View Booking</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <address class="footer__column">
-                <h3 class="footer__title">
-                    Our Location
-                </h3>
-                <a class="footer__link footer__link--address" href="https://maps.app.goo.gl/EwdrE6CTkAQLGfK96" target="_blank">
-                    2972 Westheimer Rd. Santa Ana, Illinois 85486
-                </a>
-                <ul class="social">
-                    <li class="social__item">
-                        <a class="social__link" href="#" target="_blank">
-                            <svg class="icon icon--facebook">
-                                <use href="./img/svgsprite/sprite.symbol.svg#facebook"></use>
-                            </svg>
-                            <span class="sr-only">go to facebook</span>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#" target="_blank">
-                            <svg class="icon icon--x">
-                                <use href="./img/svgsprite/sprite.symbol.svg#x"></use>
-                            </svg>
-                            <span class="sr-only">go to x - social network</span>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#" target="_blank">
-                            <svg class="icon icon--linkedin">
-                                <use href="./img/svgsprite/sprite.symbol.svg#linkedin"></use>
-                            </svg>
-                            <span class="sr-only">go to linkedin</span>
-                        </a>
-                    </li>
-                </ul>
-            </address>
-        </div>
-
-        <div class="footer__bottom">
-            <p class="footer__copyright">
-                Copyright 2023 bitway. All Rights Reserved
-            </p>
-            <div class="footer__privacy">
-                <a class="footer__link" href="#">Terms & Conditions</a>
-                <a class="footer__link" href="#">Privacy Policy</a>
-            </div>
-        </div>
-    </div>
-</footer>
-    </div>
-    <script src="./js/index.bundle.js"></script>
-</body>
-
-</html>
