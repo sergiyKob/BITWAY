@@ -1,0 +1,61 @@
+.featured-properties {
+    padding-top: clamp(1.875rem, -0.144rem + 8.97vw, 6.25rem);
+    padding-bottom: clamp(1.875rem, -3.029rem + 21.79vw, 12.5rem);
+
+    &__top {
+        position: relative;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto clamp(1.875rem, 0.721rem + 5.13vw, 4.375rem);
+
+        &::before {
+            @include pseudo;
+            @include imgBg;
+            background-image: url('./../img/decor/dots-rhomb.svg');
+            width: 130px;
+            height: 134px;
+            top: -50px;
+            left: -40%;
+
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        color: var(--gray-500);
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    &__img {
+        background-color: var(--gray-20);
+        border-radius: var(--rounded-lg);
+
+        @include tablet-sm {
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: var(--rounded-lg);
+        }
+    }
+
+    &__card {
+        position: absolute;
+        right: 100px;
+        bottom: -100px;
+        z-index: 2;
+
+        @include tablet-sm {
+            position: static;
+        }
+    }
+}
