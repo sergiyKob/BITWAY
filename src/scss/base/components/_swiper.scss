@@ -1,0 +1,15 @@
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.swiper {
+    height: 1206px;
+
+    @include tablet {
+        height: 100%;
+    }
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}

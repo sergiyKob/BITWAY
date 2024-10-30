@@ -17,7 +17,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -88,4 +88,12 @@
     &.is-active {
         display: block;
     }
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.bg-color {
+    background-color: var(--gray-5);
 }
