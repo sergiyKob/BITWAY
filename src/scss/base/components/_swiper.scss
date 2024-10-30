@@ -1,15 +1,19 @@
+//--- glonal swiper --- //
 .swiper-button-prev {}
 
 .swiper-button-next {}
 
-.swiper {
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+//------------------------//
+.slider-one {
     height: 1206px;
 
     @include tablet {
         height: 100%;
     }
 }
-
-.swiper-wrapper {}
-
-.swiper-slide {}
