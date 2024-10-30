@@ -1,0 +1,20 @@
+.card-agent {
+    &__img {
+        border-radius: var(--rounded-sm);
+        margin-bottom: 20px;
+
+        img {
+            border-radius: var(--rounded-sm);
+        }
+    }
+
+    &__title {
+        font-family: var(--font-second);
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        color: var(--gray-500);
+        margin-bottom: 20px;
+    }
+}
