@@ -6,6 +6,10 @@
 import slider from './modules/slider.js';
 slider();
 
+
+import sliderTestimonials from './modules/slider-testimonials.js';
+sliderTestimonials();
+
 // import dropdown from './modules/dropdown.js';
 // dropdown();
 

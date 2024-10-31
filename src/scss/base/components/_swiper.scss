@@ -17,3 +17,11 @@
         height: 100%;
     }
 }
+
+.slider-two {
+    height: 476px;
+
+    @include tablet {
+        height: 100%;
+    }
+}
