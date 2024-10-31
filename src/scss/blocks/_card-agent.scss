@@ -1,10 +1,18 @@
 .card-agent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
     &__img {
         border-radius: var(--rounded-sm);
-        margin-bottom: 20px;
 
         img {
+            background-color: var(--gray-20);
             border-radius: var(--rounded-sm);
+
+            @include desktop {
+                width: 100%;
+            }
         }
     }
 
