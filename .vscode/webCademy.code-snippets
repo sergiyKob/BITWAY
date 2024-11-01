@@ -218,15 +218,15 @@
     //     ],
     //     "description": "CSS BG retina"
     // },
-    "CSS img set": {
-        "prefix": "imgSet",
-        "body": [
-            "background-image: image-set(",
-			"	url('./../img/${1:example}') 1x,",
-			"	url('./../img/${1:example}') 2x);"
-        ],
-        "description": "CSS img set"
-    },
+    // "CSS img set": {
+    //     "prefix": "imgSet",
+    //     "body": [
+    //         "background-image: image-set(",
+    // 		"	url('./../img/${1:example}') 1x,",
+    // 		"	url('./../img/${1:example}') 2x);"
+    //     ],
+    //     "description": "CSS img set"
+    // },
     "SVG icon sprite": {
         "prefix": "svgIcon",
         "body": [

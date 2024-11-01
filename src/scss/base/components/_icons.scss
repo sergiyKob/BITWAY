@@ -12,4 +12,9 @@
         fill: transparent;
         stroke: var(--dark-500);
     }
+
+    &--chevron-right {
+        width: 20px;
+        height: 20px;
+    }
 }

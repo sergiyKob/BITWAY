@@ -30,6 +30,7 @@
     --primary-900: #0c1d8d;
     --primary-90: rgba(62, 84, 235, 0.9);
     --primary-80: rgba(62, 84, 235, 0.8);
+    --primary-40: rgba(62, 84, 235, 0.4);
     --primary-20: rgba(62, 84, 235, 0.2);
     --primary-10: rgba(62, 84, 235, 0.1);
     --primary-5: rgba(62, 84, 235, 0.05);
@@ -112,6 +113,7 @@
     // --shadow: 0 4px 8px 2px rgba(31, 34, 39, 0.08);
 
     --rating-star: #f6b34d;
+    --height-hero-section: clamp(12.5rem, 6.364rem + 27.27vw, 50rem);
 
 }
 

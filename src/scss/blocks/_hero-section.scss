@@ -1,0 +1,42 @@
+.hero-section {
+    @include imgBg;
+    position: relative;
+    height: var(--height-hero-section);
+    width: 100%;
+    color: var(--white-500);
+
+    &::before {
+        @include pseudo;
+        inset: 0;
+        background-color: var(--primary-40);
+        z-index: 1;
+    }
+
+    &::after {
+        @include pseudo;
+        background-image: url('./../img/decor/dots.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 102px;
+        height: 200px;
+        right: 100px;
+        bottom: -180px;
+        z-index: -1;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        min-height: var(--height-hero-section);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 2;
+    }
+}
