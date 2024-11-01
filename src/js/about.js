@@ -7,7 +7,7 @@
 // slider();
 
 
-// import fancybox from './modules/fancybox.js';
-// fancybox();
+import fancybox from './modules/fancybox.js';
+fancybox();
 
 
