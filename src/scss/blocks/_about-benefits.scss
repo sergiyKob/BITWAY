@@ -1,0 +1,27 @@
+.about-benefits {
+    padding: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem) 0;
+
+    &__top {
+        max-width: 645px;
+        margin-bottom: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem);
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        color: var(--gray-500);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+    }
+}

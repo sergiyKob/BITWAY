@@ -18,6 +18,7 @@
     }
 
     &__descr {
+        color: var(--gray-500);
         margin-bottom: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem);
     }
 
