@@ -3,6 +3,11 @@
     z-index: 2;
     padding: clamp(1.875rem, -0.144rem + 8.97vw, 6.25rem) 0;
 
+    &.about-page {
+        background-color: var(--gray-5);
+        padding: clamp(1.875rem, 0.721rem + 5.13vw, 4.375rem) 0;
+    }
+
     &::before {
         @include pseudo;
         background-repeat: no-repeat;
