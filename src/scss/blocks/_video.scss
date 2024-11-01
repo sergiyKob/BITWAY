@@ -15,9 +15,7 @@
             background-color: var(--dark-10);
             border-radius: var(--rounded-lg);
             opacity: 0;
-            visibility: hidden;
-            transition: opacity var(--transition),
-                visibility var(--transition);
+            transition: opacity var(--transition);
         }
 
         img {
@@ -31,7 +29,6 @@
 
             &::after {
                 opacity: 1;
-                visibility: visible;
             }
         }
 
