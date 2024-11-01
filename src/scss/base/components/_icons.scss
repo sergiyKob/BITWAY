@@ -17,4 +17,9 @@
         width: 20px;
         height: 20px;
     }
+
+    &--play {
+        fill: transparent;
+        stroke: var(--white-500);
+    }
 }
