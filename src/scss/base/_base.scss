@@ -34,4 +34,5 @@ body {
 
 .main {
     flex-grow: 1;
+    padding-bottom: clamp(3.125rem, 1.683rem + 6.41vw, 6.25rem);
 }
