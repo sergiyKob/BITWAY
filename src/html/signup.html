@@ -25,33 +25,62 @@
                         </p>
 
                         <form class="auth__form" action="#">
-                            <div class="auth__input-wrap">
-                                <label class="form-label" for="first-name">First Name</label>
-                                <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Mark" required>
-                            </div>
-                            <div class="auth__input-wrap">
-                                <label class="form-label" for="last-name">Last Name</label>
-                                <input class="form-input" type="text" id="last-name" name="last-name" placeholder="Allen" required>
-                            </div>
-                            <div class="auth__input-wrap">
-                                <label class="form-label" for="email">Email Address</label>
-                                <input class="form-input" type="email" id="" name="email" placeholder="mark.allen@example.com" required>
-                            </div>
-                            <div class="auth__input-wrap">
-                                <label class="form-label" for="password">Password</label>
-                                <input class="form-input" type="password" id="" name="password" placeholder="••••••••••••••••••" required>
-                            </div>
-
-                            <div class="auth__row">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" checked>
-                                    <span class="checkbox__custom-checkbox"></span>
-                                    I agree to the
+                            <fieldset class="auth__fields">
+                                <label class="form-label">
+                                    <span class="form-label__label">
+                                        First Name
+                                    </span>
+                                    <input class="form-input"
+                                           type="text"
+                                           id="first-name"
+                                           name="first-name"
+                                           placeholder="Mark"
+                                           required>
                                 </label>
-                                <a class="auth__link auth__link--terms-conditions" href="/about.html">
-                                    Terms & Conditions
-                                </a>
-                            </div>
+                                <label class="form-label">
+                                    <span class="form-label__label">
+                                        Last Name
+                                    </span>
+                                    <input class="form-input"
+                                           type="text"
+                                           id="last-name"
+                                           name="last-name"
+                                           placeholder="Allen"
+                                           required>
+                                </label>
+                                <label class="form-label">
+                                    <span class="form-label__label">
+                                        Email Address
+                                    </span>
+                                    <input class="form-input"
+                                           type="email"
+                                           id="email"
+                                           name="email"
+                                           placeholder="mark.allen@example.com"
+                                           required>
+                                </label>
+                                <label class="form-label">
+                                    <span class="form-label__label">
+                                        Password
+                                    </span>
+                                    <input class="form-input"
+                                           type="password"
+                                           id="password"
+                                           name="password"
+                                           placeholder="••••••••••••••••••"
+                                           required>
+                                </label>
+                                <div class="auth__row">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" checked>
+                                        <span class="checkbox__custom-checkbox"></span>
+                                        I agree to the
+                                    </label>
+                                    <a class="auth__link auth__link--terms-conditions" href="#">
+                                        Terms & Conditions
+                                    </a>
+                                </div>
+                            </fieldset>
 
                             <button class="btn btn--primary btn--xl btn--full" type="submit">
                                 Signup

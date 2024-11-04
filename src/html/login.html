@@ -25,26 +25,40 @@
                         </p>
 
                         <form class="auth__form" action="#">
-                            <div class="auth__input-wrap">
-                                <label class="form-label" for="email">Email Address</label>
-                                <input class="form-input" type="email" id="" name="email" placeholder="mark.allen@example.com" required>
-                            </div>
-                            <div class="auth__input-wrap">
-                                <label class="form-label" for="password">Password</label>
-                                <input class="form-input" type="password" id="" name="password" placeholder="••••••••••••••••••" required>
-                            </div>
-
-                            <div class="auth__row">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" checked>
-                                    <span class="checkbox__custom-checkbox"></span>
-                                    Remember Me
+                            <fieldset class="auth__fields">
+                                <label class="form-label">
+                                    <span class="form-label__label">
+                                        Email Address
+                                    </span>
+                                    <input class="form-input"
+                                           type="email"
+                                           id="email"
+                                           name="email"
+                                           placeholder="mark.allen@example.com"
+                                           required>
                                 </label>
-                                <a class="auth__link" href="#">
-                                    Forgot Password?
-                                </a>
-                            </div>
-
+                                <label class="form-label">
+                                    <span class="form-label__label">
+                                        Password
+                                    </span>
+                                    <input class="form-input"
+                                           type="password"
+                                           id="password"
+                                           name="password"
+                                           placeholder="••••••••••••••••••"
+                                           required>
+                                </label>
+                                <div class="auth__row">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" checked>
+                                        <span class="checkbox__custom-checkbox"></span>
+                                        Remember Me
+                                    </label>
+                                    <a class="auth__link" href="#">
+                                        Forgot Password?
+                                    </a>
+                                </div>
+                            </fieldset>
                             <button class="btn btn--primary btn--xl btn--full" type="submit">
                                 Login
                             </button>
