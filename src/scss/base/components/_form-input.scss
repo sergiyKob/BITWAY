@@ -1,18 +1,18 @@
-.input {
+.form-input {
     width: 100%;
     line-height: 1;
-    padding: 10px 20px;
-    border: 1px solid gray;
-    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid var(--gray-20);
+    border-radius: var(--rounded-sm);
     transition: box-shadow var(--transition), border-color var(--transition);
 
     &::placeholder {
-        color: #000000;
+        color: var(--gray-500);
         transition: color var(--transition);
     }
 
-    &:focus {
-        box-shadow: 0 0 0 3px var(--accent-30);
+    &:focus-visible {
+        border-color: var(--primary-500);
     }
 
     @include hover {}

@@ -1,9 +1,9 @@
 .checkbox {
-    --color-text: red;
+    --color-text: inherit;
     --color-bg: #fff;
-    --color-border: red;
-    --color-hover: red;
-    --color-focus: rgba(255, 0, 0, 0.3);
+    --color-border: var(--gray-20);
+    --color-hover: var(--primary-500);
+    --color-focus: var(--primary-40);
 
     display: inline-flex;
     align-items: center;
@@ -14,10 +14,9 @@
     cursor: pointer;
 
     @include hover {
-        color: var(--color-hover);
 
         .checkbox__custom-checkbox {
-            border: 2px solid var(--color-hover);
+            border: 1px solid var(--color-hover);
         }
     }
 
@@ -44,7 +43,7 @@
         width: 20px;
         height: 20px;
         background-color: var(--color-bg);
-        border: 2px solid var(--color-border);
+        border: 1px solid var(--color-border);
         border-radius: 5px;
         transition: border var(--transition), background-color var(--transition);
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('blocks/head.html',{"title": "Login"})
+
+<body class="body">
+    <div class="wrapper">
+        <main class="main padding-0">
+
+            <section class="auth">
+                <div class="auth__inner">
+                    <div class="auth__img" style="background-image: 
+                                                    image-set(url('./../img/auth/1.webp') 1x,
+                                                            url('./../img/auth/1@2x.webp') 2x);">
+                    </div>
+                    <div class="auth__content">
+                        <a class="logo auth__logo" href="/">
+                            <img class="logo__img" src="./img/logo.svg" width="148" height="60" alt="logo bitway">
+                        </a>
+                        <h1 class="auth__title title">
+                            Welcome 👋
+                        </h1>
+                        <p class="auth__descr">
+                            Please login here
+                        </p>
+
+                        <form class="auth__form" action="#">
+                            <div class="auth__input-wrap">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input class="form-input" type="email" id="" name="email" placeholder="mark.allen@example.com" required>
+                            </div>
+                            <div class="auth__input-wrap">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-input" type="password" id="" name="password" placeholder="••••••••••••••••••" required>
+                            </div>
+
+                            <div class="auth__row">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" checked>
+                                    <span class="checkbox__custom-checkbox"></span>
+                                    Remember Me
+                                </label>
+                                <a class="auth__link" href="#">
+                                    Forgot Password?
+                                </a>
+                            </div>
+
+                            <button class="auth__btn btn btn--primary btn--xl btn--full" type="submit">
+                                Login
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <div class="overlay"></div>
+        </main>
+    </div>
+    <script src="./js/login.bundle.js"></script>
+</body>
+
+</html>
