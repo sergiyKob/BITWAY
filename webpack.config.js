@@ -7,7 +7,7 @@ const config = {
         login: './src/js/login.js',
         signup: './src/js/signup.js',
         forgotPassword: './src/js/forgot-password.js',
-        verifyCode: './src/js/verify-code.js'
+        verifyCode: './src/js/verifyCode.js'
     },
     output: {
         filename: '[name].bundle.js',

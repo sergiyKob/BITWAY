@@ -1,0 +1,27 @@
+.popup {
+    position: relative;
+    padding-top: 138px;
+
+    &::before {
+        @include pseudo;
+        @include imgBg;
+        background-image: url('./../img/icons/modal-icon.svg');
+        width: 108px;
+        height: 108px;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+
+    }
+
+    &__title {
+        font-family: var(--font-second);
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        margin-bottom: 30px;
+    }
+
+    &__link {}
+}

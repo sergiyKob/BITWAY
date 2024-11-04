@@ -34,18 +34,17 @@
 
     &__container {
         position: relative;
-        // display: inline-block;
         display: none;
-        width: 50%;
+        width: 430px;
         margin: 50px auto;
-        padding: 50px;
+        padding: 20px;
         vertical-align: middle;
-        background-color: #fff;
+        background-color: var(--white-500);
         border-radius: 20px;
-        text-align-last: left;
+        text-align-last: center;
         cursor: default;
 
-        @include tablet {
+        @include mobile {
             width: 90%;
         }
 

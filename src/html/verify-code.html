@@ -81,18 +81,38 @@
                                 </label>
                             </fieldset>
 
-                            <button class="btn btn--primary btn--xl btn--full" type="submit">
+                            <button class="btn btn--primary btn--xl btn--full"
+                                    type="button"
+                                    data-path="first"
+                                    data-animation="fadeUp"
+                                    data-speed="500">
                                 Verify
                             </button>
                         </form>
                     </div>
                 </div>
             </section>
-
+            <div class="modal">
+                <div class="modal__container" data-target="first">
+                    <div class="modal__content">
+                        <div class="popup">
+                            <h2 class="popup__title title title--md">
+                                Password Changed Successfully
+                            </h2>
+                            <p class="popup__descr">
+                                Your password has been updated successfully
+                            </p>
+                            <a class="popup__link btn btn--primary btn--xl btn--full" href="/login.html">
+                                Back to Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="overlay"></div>
         </main>
     </div>
-    <script src="./js/verify-code.bundle.js"></script>
+    <script src="./js/verifyCode.bundle.js"></script>
 </body>
 
 </html>
