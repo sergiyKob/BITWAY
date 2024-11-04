@@ -61,6 +61,7 @@
     &__row {
         display: flex;
         align-items: center;
+        gap: 5px;
         margin-bottom: 30px;
     }
 
@@ -69,5 +70,13 @@
         font-size: 14px;
         color: var(--primary-500);
         margin-left: auto;
+
+        &--terms-conditions {
+            margin-left: 0;
+        }
+
+        @include hover {
+            text-decoration: underline;
+        }
     }
 }
