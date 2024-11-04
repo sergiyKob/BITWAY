@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('blocks/head.html',{"title": "Verify Code"})
+
+<body class="body">
+    <div class="wrapper">
+        <main class="main padding-0">
+
+            <section class="auth">
+                <div class="auth__inner">
+                    <div class="auth__img" style="background-image: 
+                                                    image-set(url('./../img/auth/4.webp') 1x,
+                                                            url('./../img/auth/4@2x.webp') 2x);">
+                    </div>
+                    <div class="auth__content">
+                        <a class="auth__back" href="/forgot-password.html">
+                            <svg class="icon icon--chevron-left">
+                                <use href="./img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                            </svg>
+                            Back
+                        </a>
+                        <h1 class="auth__title title">
+                            Enter OTP
+                        </h1>
+                        <p class="auth__descr">
+                            We have share a code of your registered email address
+                            mark.allen@example.com
+                        </p>
+                        <form class="auth__form" action="#">
+                            <fieldset class="auth__code">
+                                <label class="form-label">
+                                    <span class="sr-only">
+                                        number 1
+                                    </span>
+                                    <input class="form-input"
+                                           type="number"
+                                           id=""
+                                           name=""
+                                           required>
+                                </label>
+                                <label class="form-label">
+                                    <span class="sr-only">
+                                        number 2
+                                    </span>
+                                    <input class="form-input"
+                                           type="number"
+                                           id=""
+                                           name=""
+                                           required>
+                                </label>
+                                <label class="form-label">
+                                    <span class="sr-only">
+                                        number 3
+                                    </span>
+                                    <input class="form-input"
+                                           type="number"
+                                           id=""
+                                           name=""
+                                           required>
+                                </label>
+                                <label class="form-label">
+                                    <span class="sr-only">
+                                        number 4
+                                    </span>
+                                    <input class="form-input"
+                                           type="number"
+                                           id=""
+                                           name=""
+                                           required>
+                                </label>
+                                <label class="form-label">
+                                    <span class="sr-only">
+                                        number 5
+                                    </span>
+                                    <input class="form-input"
+                                           type="number"
+                                           id=""
+                                           name=""
+                                           required>
+                                </label>
+                            </fieldset>
+
+                            <button class="btn btn--primary btn--xl btn--full" type="submit">
+                                Verify
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <div class="overlay"></div>
+        </main>
+    </div>
+    <script src="./js/verify-code.bundle.js"></script>
+</body>
+
+</html>

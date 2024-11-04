@@ -5,7 +5,9 @@ const config = {
         about: './src/js/about.js',
         agents: './src/js/agents.js',
         login: './src/js/login.js',
-        signup: './src/js/signup.js'
+        signup: './src/js/signup.js',
+        forgotPassword: './src/js/forgot-password.js',
+        verifyCode: './src/js/verify-code.js'
     },
     output: {
         filename: '[name].bundle.js',

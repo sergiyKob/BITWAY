@@ -54,6 +54,7 @@
     }
 
     &__descr {
+        max-width: 450px;
         color: var(--gray-500);
         margin-bottom: 30px;
     }
@@ -73,6 +74,30 @@
         display: flex;
         flex-direction: column;
         row-gap: 16px;
+    }
+
+    &__code {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        @include mobile {
+            column-gap: 10px;
+        }
+
+        .form-label {
+            width: 60px;
+            height: 60px;
+        }
+
+        .form-input {
+            font-family: var(--font-second);
+            height: 100%;
+            font-size: 24px;
+            font-weight: 700;
+            padding: 0;
+            text-align: center;
+        }
     }
 
     &__row {
