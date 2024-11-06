@@ -1,0 +1,93 @@
+.about-slider {
+    padding: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem) 0;
+
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        @include desktop {
+            flex-direction: column-reverse;
+        }
+
+        &::before {
+            @include pseudo;
+            @include imgBg;
+            background-image: url('./../img/decor/dots-rhomb.svg');
+            top: -100px;
+            left: -100px;
+            width: 130px;
+            height: 134px;
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+    }
+
+    &__slider,
+    &__content {
+        width: 50%;
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    &__images {
+        align-items: center;
+
+        .swiper-slide:nth-child(even) {
+            .about-slider__img {
+                height: 496px;
+
+                @include desktop {
+                    height: 358px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        @include imgBg;
+        display: inline-block;
+        width: 262px;
+        height: 358px;
+        border-radius: var(--rounded-lg);
+        background-color: var(--gray-20);
+
+        @include desktop {
+            width: 100%;
+
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        @include mobile {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__descr {
+        margin-bottom: 50px;
+        color: var(--gray-500);
+
+        @include desktop {
+            margin-bottom: 0;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include desktop {
+            display: none;
+        }
+    }
+}
