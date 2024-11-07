@@ -1,4 +1,7 @@
 .card-product {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     background-color: var(--white-500);
     padding: 20px;
     border-radius: var(--rounded-lg);
@@ -6,7 +9,6 @@
 
     &__top {
         position: relative;
-        margin-bottom: 16px;
     }
 
     &__img {

@@ -17,6 +17,7 @@
     }
 
     &__title {
+        @include line-clamp(1);
         font-family: var(--font-second);
         margin-bottom: 10px;
     }
@@ -24,5 +25,9 @@
     &__position {
         color: var(--gray-500);
         margin-bottom: 20px;
+    }
+
+    &__descr {
+        @include line-clamp(1);
     }
 }
