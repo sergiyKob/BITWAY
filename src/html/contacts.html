@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('blocks/head.html',{"title": "Contact Us"})
+
+<body class="body">
+    <div class="wrapper">
+        @@include('blocks/header.html')
+        <main class="main">
+            @@include('blocks/hero-section.html', {"hero-title": "Contact Us", "hero-bg": "about"})
+
+            <section class="contacts">
+                <div class="contacts__container container">
+                    <address class="contacts__address">
+                        <h2 class="contacts__title title title--lg">
+                            Get in Touch
+                        </h2>
+                        <p class="contacts__descr">
+                            Using it can make you sound like you have been studying english for
+                            a long time. Here’s the challenge
+                        </p>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <div class="contacts__icon">
+                                    <svg class="icon icon--location">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
+                                    </svg>
+                                </div>
+                                <div class="contacts__label">
+                                    Location
+                                </div>
+                                <a class="contacts__link" href="https://maps.app.goo.gl/wKvym3m5Gv5wawhx9" target="_blank">
+                                    4140 Parker Rd. Allentown, New Mexico 31134
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contacts__icon">
+                                    <svg class="icon icon--phone">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="contacts__label">
+                                    Phone Number
+                                </div>
+                                <a class="contacts__link" href="tel:13195550115">
+                                    +1(319) 555-0115
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contacts__icon">
+                                    <svg class="icon icon--share">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#share"></use>
+                                    </svg>
+                                </div>
+                                <div class="contacts__label">
+                                    Follow Us
+                                </div>
+                                <ul class="social-contact">
+                                    <li class="social-contact__item">
+                                        <a class="social-contact__link" href="#">
+                                            <svg class="icon icon--facebook-out">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#facebook-out"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-contact__item">
+                                        <a class="social-contact__link" href="#">
+                                            <svg class="icon icon--instagram-out">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#instagram-out"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-contact__item">
+                                        <a class="social-contact__link" href="#">
+                                            <svg class="icon icon--x-out">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#x-out"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-contact__item">
+                                        <a class="social-contact__link" href="#">
+                                            <svg class="icon icon--linkedln-out">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#linkedln-out"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </address>
+                    <form class="contacts__form" action="#">
+                        <fieldset class="contacts__fields">
+                            <label class="form-label">
+                                <span class="form-label__label">
+                                    First Name
+                                </span>
+                                <input
+                                       class="form-input"
+                                       type="text"
+                                       id="contact-name"
+                                       name="contact-name"
+                                       placeholder="Enter Your Name"
+                                       required>
+                            </label>
+                            <label class="form-label">
+                                <span class="form-label__label">
+                                    Email
+                                </span>
+                                <input
+                                       class="form-input"
+                                       type="email"
+                                       id="contact-email"
+                                       name="contact-email"
+                                       placeholder="Enter Your Email"
+                                       required>
+                            </label>
+                            <label class="form-label">
+                                <span class="form-label__label">
+                                    Phone Number
+                                </span>
+                                <input
+                                       class="form-input"
+                                       type="tel"
+                                       id="contact-tel"
+                                       name="contact-tel"
+                                       placeholder="Enter Phone Number"
+                                       required>
+                            </label>
+                            <label class="form-label">
+                                <span class="form-label__label">
+                                    Message
+                                </span>
+                                <textarea
+                                          class="contacts__textarea form-input"
+                                          name="contact-textarea"
+                                          id="contact-textarea"
+                                          placeholder="Enter Your Message"></textarea>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn--primary btn--xl btn--full" type="submit">
+                            Send Enquiry
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <div class="overlay"></div>
+        </main>
+        @@include('blocks/footer.html')
+    </div>
+    <script src="./js/contacts.bundle.js"></script>
+</body>
+
+</html>

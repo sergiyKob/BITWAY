@@ -8,7 +8,8 @@ const config = {
         signup: './src/js/signup.js',
         forgotPassword: './src/js/forgot-password.js',
         verifyCode: './src/js/verifyCode.js',
-        favourite: './src/js/favourite.js'
+        favourite: './src/js/favourite.js',
+        contacts: './src/js/contacts.js'
     },
     output: {
         filename: '[name].bundle.js',
