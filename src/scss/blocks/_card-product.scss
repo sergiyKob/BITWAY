@@ -105,9 +105,7 @@
 
     &__avatar {}
 
-    &__name {
-        @include line-clamp(1);
-    }
+    &__name {}
 
     &__actions {
         display: flex;

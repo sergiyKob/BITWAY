@@ -1,6 +1,6 @@
 node_modules
-build/
-docs/
+build
+docs
 .webp
 .DS_Store
 .vscode
