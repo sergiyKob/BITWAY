@@ -9,7 +9,8 @@ const config = {
         forgotPassword: './src/js/forgot-password.js',
         verifyCode: './src/js/verifyCode.js',
         favourite: './src/js/favourite.js',
-        contacts: './src/js/contacts.js'
+        contacts: './src/js/contacts.js',
+        privacyPolicy: './src/js/privacyPolicy.js'
     },
     output: {
         filename: '[name].bundle.js',

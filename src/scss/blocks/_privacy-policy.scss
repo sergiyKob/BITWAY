@@ -1,0 +1,13 @@
+.privacy-policy {
+    padding-top: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem);
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
