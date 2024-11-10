@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('blocks/head.html',{"title": "Property"})
+
+<body class="body">
+    <div class="wrapper">
+        @@include('blocks/header.html')
+        <main class="main">
+
+            <section class="property">
+                <div class="container">
+                    <h1 class="sr-only">Property Listing</h1>
+                    <nav class="property__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="/">
+                                    Home
+                                    <svg class="icon icon--chevron-right">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link">Properties</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="property__inner">
+                        <aside class="property__aside filter">
+                            <form class="filter__form">
+                                <ul class="filter__list">
+                                    <li class="filter__item">
+                                        <button class="filter__btn btn btn--with-icon" type="button" data-filter>
+                                            Select Location
+                                            <svg class="icon icon--arrow-down">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter__select-wrap">
+                                            <div class="filter__select-title">
+                                                Location
+                                            </div>
+                                            <select class="filter__select" id="" name="">
+                                                <option value="california">California</option>
+                                                <option value="newYork">New York</option>
+                                                <option value="arizona">Arizona</option>
+                                                <option value="florida">Florida</option>
+                                                <option value="colorado">Colorado</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button class="filter__btn btn btn--with-icon" type="button" data-filter>
+                                            Property Type
+                                            <svg class="icon icon--arrow-down">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                                            </svg>
+                                        </button>
+                                        <ul class="filter__content">
+                                            <li class="filter__content-item">
+                                                <label class="filter__content-label checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <span class="checkbox__custom-checkbox"></span>
+                                                    Buy
+                                                </label>
+                                            </li>
+                                            <li class="filter__content-item">
+                                                <label class="filter__content-label checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <span class="checkbox__custom-checkbox"></span>
+                                                    Rent
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button class="filter__btn btn btn--with-icon" type="button" data-filter>
+                                            Categories
+                                            <svg class="icon icon--arrow-down">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                                            </svg>
+                                        </button>
+                                        <ul class="filter__content">
+                                            <li class="filter__content-item">
+                                                <label class="filter__content-label checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <span class="checkbox__custom-checkbox"></span>
+                                                    Apartment
+                                                </label>
+                                            </li>
+                                            <li class="filter__content-item">
+                                                <label class="filter__content-label checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <span class="checkbox__custom-checkbox"></span>
+                                                    Villa
+                                                </label>
+                                            </li>
+                                            <li class="filter__content-item">
+                                                <label class="filter__content-label checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <span class="checkbox__custom-checkbox"></span>
+                                                    Duplex
+                                                </label>
+                                            </li>
+                                            <li class="filter__content-item">
+                                                <label class="filter__content-label checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <span class="checkbox__custom-checkbox"></span>
+                                                    Houses
+                                                </label>
+                                            </li>
+                                            <li class="filter__content-item">
+                                                <label class="filter__content-label checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <span class="checkbox__custom-checkbox"></span>
+                                                    Penthouse
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button class="filter__btn btn btn--with-icon" type="button" data-filter>
+                                            Property Size
+                                            <svg class="icon icon--arrow-down">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter__content">
+                                            <div class="range-slider">
+                                                <div id="range-slider-size"></div>
+                                                <div class="range-slider__inputs">
+                                                    Size:
+                                                    <label class="range-slider__label">
+                                                        <span class="range-slider__currency">$</span>
+                                                        <input id="range-slider-input-0" class="range-slider__input input"
+                                                               type="number" min="0" max="2400" placeholder="0">
+                                                    </label>
+
+                                                    <label class="range-slider__label">
+                                                        <span class="range-slider__currency">$</span>
+                                                        <input id="range-slider-input-1" class="range-slider__input input"
+                                                               type="number" min="0" max="2400" placeholder="2400">
+                                                    </label>
+                                                    sqft
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button class="filter__btn btn btn--with-icon" type="button" data-filter>
+                                            Price Range
+                                            <svg class="icon icon--arrow-down">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter__content">
+                                            <div class="range-slider">
+                                                <div id="range-slider-price"></div>
+                                                <div class="range-slider__inputs">
+                                                    Price:
+                                                    <label class="range-slider__label">
+                                                        <span class="range-slider__currency">$</span>
+                                                        <input id="range-slider-input-0" class="range-slider__input input"
+                                                               type="number" min="0" max="999" placeholder="10000">
+                                                    </label>
+                                                    <label class="range-slider__label">
+                                                        <span class="range-slider__currency">$</span>
+                                                        <input id="range-slider-input-1" class="range-slider__input input"
+                                                               type="number" min="0" max="250" placeholder="30000">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button class="filter__btn btn btn--with-icon" type="button" data-filter>
+                                            Rooms
+                                            <svg class="icon icon--arrow-down">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter__select-wrap">
+                                            <div class="filter__select-title">
+                                                Bedroom
+                                            </div>
+                                            <select class="filter__select" id="" name="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter__select-wrap">
+                                            <div class="filter__select-title">
+                                                Bathroom
+                                            </div>
+                                            <select class="filter__select" id="" name="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </form>
+                        </aside>
+
+                        <div class="property__body">
+                            <div class="property__settings"></div>
+                            <ul class="property__list">
+                                <li class="property__item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="overlay"></div>
+        </main>
+        <!-- @@include('blocks/footer.html') -->
+    </div>
+    <script src="./js/property.bundle.js"></script>
+</body>
+
+</html>

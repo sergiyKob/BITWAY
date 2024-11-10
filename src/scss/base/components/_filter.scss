@@ -1,0 +1,60 @@
+.filter {
+    &__form {}
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gray-10);
+    }
+
+    &__btn {
+        justify-content: space-between;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__select-wrap {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__select {
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid var(--gray-40);
+        border-radius: var(--rounded-sm);
+        cursor: pointer;
+        transition: border-color var(--transition);
+
+        &:focus-visible {
+            border-color: var(--primary-500);
+        }
+
+        @include hover {
+            border-color: var(--primary-500);
+        }
+    }
+
+    &__select-title {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__content-item {}
+
+    &__content-label {}
+}

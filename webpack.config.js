@@ -10,7 +10,8 @@ const config = {
         verifyCode: './src/js/verifyCode.js',
         favourite: './src/js/favourite.js',
         contacts: './src/js/contacts.js',
-        privacyPolicy: './src/js/privacyPolicy.js'
+        privacyPolicy: './src/js/privacyPolicy.js',
+        property: './src/js/property.js'
     },
     output: {
         filename: '[name].bundle.js',
