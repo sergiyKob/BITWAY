@@ -4,5 +4,3 @@ docs
 .webp
 .DS_Store
 .vscode
-
-package-lock.json

@@ -9,7 +9,9 @@
     &--heart,
     &--share,
     &--location,
-    &--arrow-down {
+    &--arrow-down,
+    &--grid,
+    &--list {
         fill: transparent;
         stroke: var(--dark-500);
     }

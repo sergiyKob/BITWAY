@@ -36,6 +36,8 @@
     <path d="M18 3h-3a5 5 0 0 0-5 5v2H6v4h4v7h4v-7h4v-4h-4V8a1 1 0 0 1 1-1h3V3Z" fill="#3E54EB"/>
 </svg><svg fill="none" viewBox="0 0 24 24" id="facebook-out" xmlns="http://www.w3.org/2000/svg">
     <path d="M18 3h-3a5 5 0 0 0-5 5v2H6v4h4v7h4v-7h4v-4h-4V8a1 1 0 0 1 1-1h3V3Z" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 24 24" id="grid" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4ZM14 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V4ZM2 16a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4ZM14 16a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4Z" stroke="#0F1015" stroke-width="1.5" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 20 20" id="heart" xmlns="http://www.w3.org/2000/svg">
     <path d="M10.638 3.919 10 4.604l-.637-.685c-1.761-1.892-4.615-1.892-6.376 0-1.76 1.891-1.76 4.958 0 6.849l5.738 6.165a1.716 1.716 0 0 0 2.55 0l5.738-6.165c1.76-1.891 1.76-4.958 0-6.85-1.76-1.89-4.615-1.89-6.375 0Z" stroke="#0F1015" stroke-width="1.5" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 24 24" id="home" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +59,8 @@
 </svg><svg fill="none" viewBox="0 0 24 24" id="linkedln-out" xmlns="http://www.w3.org/2000/svg">
     <circle cx="4" cy="4" r="2" stroke="#0F1015" stroke-width="1.5"/>
     <path d="M2 8.5h4V22H2V8.5ZM9 22h4v-7a2 2 0 1 1 4 0v7h4v-7a6 6 0 0 0-8-5.659V8.5H9V22Zm0 0v-7" stroke="#0F1015" stroke-width="1.5" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 24 24" id="list" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 6h6m-6 8h6m-6-4h12m-12 8h12M4 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round"/>
 </svg><svg fill="none" viewBox="0 0 24 24" id="location" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="11" r="3" stroke="#fff" stroke-width="1.5"/>
     <path d="M21 10.889C21 15.799 15.375 22 12 22s-9-6.202-9-11.111C3 5.979 7.03 2 12 2s9 3.98 9 8.889Z" stroke="#fff" stroke-width="1.5"/>
@@ -71,11 +75,11 @@
 </svg><svg fill="none" viewBox="0 0 24 24" id="search-normal" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.5 21.75c-5.65 0-10.25-4.6-10.25-10.25S5.85 1.25 11.5 1.25s10.25 4.6 10.25 10.25-4.6 10.25-10.25 10.25Zm0-19c-4.83 0-8.75 3.93-8.75 8.75s3.92 8.75 8.75 8.75 8.75-3.93 8.75-8.75-3.92-8.75-8.75-8.75ZM22 22.75c-.19 0-.38-.07-.53-.22l-2-2a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l2 2c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22Z" fill="#3E54EB"/>
 </svg><svg fill="none" viewBox="0 0 18 18" id="share" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#aza)">
+    <g clip-path="url(#bba)">
         <path d="M6.473 7.826a2.625 2.625 0 1 0 0 2.348m0-2.348c.177.353.277.752.277 1.174 0 .422-.1.82-.277 1.174m0-2.348 5.054-2.527m-5.054 4.875 5.054 2.527m0-7.402a2.625 2.625 0 1 0 4.695-2.348 2.625 2.625 0 0 0-4.695 2.348Zm0 7.402a2.625 2.625 0 1 0 4.697 2.348 2.625 2.625 0 0 0-4.697-2.348Z" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round"/>
     </g>
     <defs>
-        <clipPath id="aza">
+        <clipPath id="bba">
             <path fill="#fff" d="M0 0h18v18H0z"/>
         </clipPath>
     </defs>

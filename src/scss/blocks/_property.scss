@@ -13,13 +13,30 @@
 
     &__aside {}
 
-    &__body {
-        border: 1px solid #000;
+    &__body {}
+
+    &__settings {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
     }
 
-    &__settings {}
+    &__sort {
+        margin-left: auto;
+    }
 
-    &__list {}
+    &__sort-select {
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+        gap: 10px;
+        margin-bottom: 50px;
+    }
 
     &__item {}
 }

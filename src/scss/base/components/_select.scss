@@ -1,0 +1,16 @@
+.select {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid var(--gray-40);
+    border-radius: var(--rounded-sm);
+    cursor: pointer;
+    transition: border-color var(--transition);
+
+    &:focus-visible {
+        border-color: var(--primary-500);
+    }
+
+    @include hover {
+        border-color: var(--primary-500);
+    }
+}
