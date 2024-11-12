@@ -9,11 +9,26 @@
         display: grid;
         grid-template-columns: 244px 1fr;
         gap: 50px;
+
+        @include desktop {
+            gap: 20px;
+        }
+
+        @include tablet {
+            display: block;
+        }
     }
 
-    &__aside {}
+    &__aside {
 
-    &__body {}
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__body {
+        height: 600px;
+    }
 
     &__settings {
         display: flex;
@@ -37,8 +52,6 @@
         gap: 10px;
         margin-bottom: 50px;
     }
-
-    &__item {}
 }
 
 
