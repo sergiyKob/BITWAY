@@ -26,15 +26,23 @@
         }
     }
 
-    &__body {
-        height: 600px;
-    }
-
     &__settings {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 30px;
+    }
+
+    &__grid-view,
+    &__list-view {
+
+        &.is-active {
+            pointer-events: none;
+
+            svg {
+                stroke: var(--primary-500);
+            }
+        }
     }
 
     &__sort {
@@ -51,18 +59,9 @@
         grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
         gap: 10px;
         margin-bottom: 50px;
+
+        &.list-view {
+            grid-template-columns: 1fr;
+        }
     }
-}
-
-
-
-
-.range-slider {
-    &__inputs {}
-
-    &__label {}
-
-    &__currency {}
-
-    &__input {}
 }

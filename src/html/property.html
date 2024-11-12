@@ -7,7 +7,6 @@
     <div class="wrapper">
         @@include('blocks/header.html')
         <main class="main">
-
             <section class="property">
                 <div class="container">
                     <h1 class="sr-only">Property Listing</h1>
@@ -231,15 +230,17 @@
 
                         <div class="property__body">
                             <div class="property__settings">
-                                <button class="property__grid-view btn btn--only-icon btn--md" type="button">
+                                <button class="property__grid-view btn btn--only-icon btn--md is-active" type="button" title="Grid view">
                                     <svg class="icon icon--grid">
                                         <use href="./img/svgsprite/sprite.symbol.svg#grid"></use>
                                     </svg>
+                                    <span class="sr-only">switch to grid view</span>
                                 </button>
-                                <button class="property__list-view btn btn--only-icon btn--md" type="button">
+                                <button class="property__list-view btn btn--only-icon btn--md" type="button" title="List view">
                                     <svg class="icon icon--list">
                                         <use href="./img/svgsprite/sprite.symbol.svg#list"></use>
                                     </svg>
+                                    <span class="sr-only">switch to list view</span>
                                 </button>
 
                                 <div class="property__showing">
@@ -299,7 +300,7 @@
                                                 <div class="card-product__avatar">
                                                     <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                                                 </div>
-                                                <div class="card-product__name">
+                                                <div class="card-product__name" title="Wade Warren">
                                                     Wade Warren
                                                 </div>
                                                 <ul class="card-product__actions">
@@ -373,7 +374,7 @@
                                                 <div class="card-product__avatar">
                                                     <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                                                 </div>
-                                                <div class="card-product__name">
+                                                <div class="card-product__name" title="Wade Warren">
                                                     Wade Warren
                                                 </div>
                                                 <ul class="card-product__actions">
@@ -447,7 +448,7 @@
                                                 <div class="card-product__avatar">
                                                     <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                                                 </div>
-                                                <div class="card-product__name">
+                                                <div class="card-product__name" title="Wade Warren">
                                                     Wade Warren
                                                 </div>
                                                 <ul class="card-product__actions">
@@ -521,7 +522,7 @@
                                                 <div class="card-product__avatar">
                                                     <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                                                 </div>
-                                                <div class="card-product__name">
+                                                <div class="card-product__name" title="Wade Warren">
                                                     Wade Warren
                                                 </div>
                                                 <ul class="card-product__actions">
@@ -595,7 +596,7 @@
                                                 <div class="card-product__avatar">
                                                     <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                                                 </div>
-                                                <div class="card-product__name">
+                                                <div class="card-product__name" title="Wade Warren">
                                                     Wade Warren
                                                 </div>
                                                 <ul class="card-product__actions">
@@ -669,7 +670,7 @@
                                                 <div class="card-product__avatar">
                                                     <img src="./../img/people/people-1.jpg" loading="lazy" width="34" height="34" alt="Wade Warren">
                                                 </div>
-                                                <div class="card-product__name">
+                                                <div class="card-product__name" title="Wade Warren">
                                                     Wade Warren
                                                 </div>
                                                 <ul class="card-product__actions">
@@ -702,6 +703,7 @@
                                         </div>
                                     </article>
                                 </li>
+
                             </ul>
 
                             <div class="pagination">
@@ -742,11 +744,9 @@
                     </div>
                 </div>
             </section>
-
-
             <div class="overlay"></div>
         </main>
-        <!-- @@include('blocks/footer.html') -->
+        @@include('blocks/footer.html')
     </div>
     <script src="./js/property.bundle.js"></script>
 </body>

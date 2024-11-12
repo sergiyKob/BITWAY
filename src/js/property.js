@@ -10,3 +10,6 @@ rangeSliderSize();
 import rangeSliderPrice from './modules/range-slider-price.js';
 rangeSliderPrice();
 
+import toggleCard from './modules/toggle-card.js';
+toggleCard();
+
