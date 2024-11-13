@@ -83,8 +83,8 @@
 .overlay {
     position: fixed;
     inset: 0;
-    z-index: 89;
-    background-color: var(--dark-20);
+    z-index: 100;
+    background-color: var(--dark-40);
     display: none;
 
     &.is-active {

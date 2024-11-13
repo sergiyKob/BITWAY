@@ -11,7 +11,9 @@
     &--location,
     &--arrow-down,
     &--grid,
-    &--list {
+    &--list,
+    &--filter,
+    &--close {
         fill: transparent;
         stroke: var(--dark-500);
     }

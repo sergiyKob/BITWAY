@@ -13,3 +13,6 @@ rangeSliderPrice();
 import toggleCard from './modules/toggle-card.js';
 toggleCard();
 
+import catalogFilter from './modules/catalog-filter.js';
+catalogFilter();
+

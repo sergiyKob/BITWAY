@@ -19,18 +19,24 @@
         }
     }
 
-    &__aside {
-
-        @include tablet {
-            display: none;
-        }
-    }
-
     &__settings {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 30px;
+
+        @include mobile {
+            column-gap: 5px;
+        }
+    }
+
+    &__filter-btn {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
     }
 
     &__grid-view,
@@ -42,6 +48,13 @@
             svg {
                 stroke: var(--primary-500);
             }
+        }
+    }
+
+    &__showing {
+        @include mobile {
+            width: 100%;
+            order: 2;
         }
     }
 

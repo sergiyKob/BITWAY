@@ -26,7 +26,14 @@
                         </ul>
                     </nav>
                     <div class="property__inner">
-                        <aside class="property__aside filter">
+                        <aside class="filter">
+                            <button class="filter__close btn btn--only-icon btn--md" type="button">
+                                <svg class="icon icon--close">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+                                </svg>
+                                <span class="sr-only">close filter</span>
+                            </button>
+
                             <form class="filter__form">
                                 <ul class="filter__list">
                                     <li class="filter__item">
@@ -230,6 +237,13 @@
 
                         <div class="property__body">
                             <div class="property__settings">
+                                <button class="property__filter-btn btn btn--only-icon btn--md" type="button">
+                                    <svg class="icon icon--filter">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#filter"></use>
+                                    </svg>
+                                    <span class="sr-only">open filter</span>
+                                </button>
+
                                 <button class="property__grid-view btn btn--only-icon btn--md is-active" type="button" title="Grid view">
                                     <svg class="icon icon--grid">
                                         <use href="./img/svgsprite/sprite.symbol.svg#grid"></use>
@@ -255,7 +269,6 @@
                                         <option value="novelty">Newest</option>
                                     </select>
                                 </div>
-
                             </div>
 
                             <ul class="property__list">
