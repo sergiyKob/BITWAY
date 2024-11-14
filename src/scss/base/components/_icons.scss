@@ -13,9 +13,11 @@
     &--grid,
     &--list,
     &--filter,
-    &--close {
+    &--close,
+    &--whatsapp {
         fill: transparent;
-        stroke: var(--dark-500);
+        stroke: currentColor;
+        // stroke: var(--dark-500);
     }
 
     &--chevron-right {

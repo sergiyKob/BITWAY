@@ -118,13 +118,86 @@
                         </div>
 
                         <section class="product__agent agent-details">
-                            <h2 class="agent-details__title">
+                            <h2 class="agent-details__title title">
                                 Agent Details
                             </h2>
+                            <div class="agent-details__header">
+                                <div class="agent-details__img">
+                                    <img src="./../img/agents/leasie-willions.jpg" loading="lazy" width="70" height="70" alt="Leasie willions">
+                                </div>
+                                <p class="agent-details__name title title--md">Leasie Willions</p>
+                                <p class="agent-details__position">Real Estate Agent</p>
+                            </div>
+
+                            <form class="agent-details__form" action="#">
+                                <fieldset class="agent-details__fields">
+                                    <label class="form-label">
+                                        <span class="form-label__label">
+                                            Name
+                                        </span>
+                                        <input class="form-input"
+                                               type="text"
+                                               id="name"
+                                               name="name"
+                                               placeholder="Enter Your Name"
+                                               required>
+                                    </label>
+                                    <label class="form-label">
+                                        <span class="form-label__label">
+                                            Email
+                                        </span>
+                                        <input class="form-input"
+                                               type="email"
+                                               id="email"
+                                               name="email"
+                                               placeholder="Enter Your Email"
+                                               required>
+                                    </label>
+                                    <label class="form-label">
+                                        <span class="form-label__label">
+                                            Phone Number
+                                        </span>
+                                        <input class="form-input"
+                                               type="tel"
+                                               id="phone"
+                                               name="phone"
+                                               placeholder="Enter Phone Number"
+                                               required>
+                                    </label>
+                                    <label class="form-label">
+                                        <span class="form-label__label">
+                                            Message
+                                        </span>
+                                        <textarea
+                                                  class="agent-details__textarea form-input"
+                                                  name="textarea"
+                                                  id="textarea"
+                                                  placeholder="Enter Your Message"
+                                                  required></textarea>
+                                    </label>
+                                </fieldset>
+                                <button class="agent-details__btn btn btn--primary btn--xl btn--full" type="submit">
+                                    Send Enquiry
+                                </button>
+                            </form>
+
+                            <div class="agent-details__links">
+                                <a class="agent-details__link btn btn--xl btn--outline btn--with-icon" href="tel:+1234567890">
+                                    <svg class="icon icon--phone">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                                    </svg>
+                                    Call
+                                </a>
+                                <a class="agent-details__link btn btn--xl btn--outline btn--with-icon" href="tel:+1234567890">
+                                    <svg class="icon icon--whatsapp">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#whatsapp"></use>
+                                    </svg>
+                                    Whatsapp
+                                </a>
+                            </div>
                         </section>
                     </div>
                 </div>
-
             </section>
 
 

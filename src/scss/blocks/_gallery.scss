@@ -1,0 +1,39 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    &__link {
+        border-radius: var(--rounded-sm);
+
+        &:nth-child(5) {
+            position: relative;
+
+            &::before {
+                @include pseudo;
+                inset: 0;
+                z-index: 1;
+                background-color: var(--dark-30);
+                border-radius: var(--rounded-sm);
+            }
+        }
+
+        &:nth-child(n + 6) {
+            display: none;
+        }
+    }
+
+    &__link-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: var(--white-500);
+    }
+
+    &__img {
+        background-color: var(--gray-20);
+        border-radius: var(--rounded-sm);
+    }
+}
