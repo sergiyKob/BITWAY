@@ -3,6 +3,10 @@
 
     &__breadcrumbs {
         margin-bottom: 50px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
 
     &__inner {

@@ -9,9 +9,6 @@ function focusVerifyCode() {
             const previousElement = currentElement.closest('.form-label').previousElementSibling;
             const nextElement = currentElement.closest('.form-label').nextElementSibling;
 
-            console.log(el.value);
-
-
             if (el.value.length === 1) {
                 btn.focus();
             }
