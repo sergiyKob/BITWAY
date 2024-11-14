@@ -1,0 +1,130 @@
+.product {
+    padding-top: clamp(1.875rem, 1.298rem + 2.56vw, 3.125rem);
+
+    &__breadcrumbs {
+        margin-bottom: 50px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__hero {
+        @include imgBg;
+        height: clamp(12.5rem, -1.346rem + 61.54vw, 42.5rem); // 200px-680px
+        background-color: var(--gray-20);
+    }
+
+    &__body {
+        transform: translateY(-62px);
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 50px 30px;
+    }
+
+    &__gallery,
+    &__heading {
+        grid-column: 12 span;
+    }
+
+    &__heading {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gray-20);
+    }
+
+    &__title {
+        font-family: var(--font-second);
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__address {
+        position: relative;
+        grid-column: 1 / 2;
+        margin-bottom: 20px;
+        padding-left: 34px;
+
+        &::before {
+            @include pseudo;
+            @include imgBg;
+            background-image: url('./../img/icons/location.svg');
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: -2px;
+        }
+    }
+
+    &__price {
+        grid-column: 1 / 2;
+    }
+
+    &__actions {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &__actions-item {}
+
+    &__btn {}
+
+    &__tabs {
+        background-color: violet;
+        grid-column: 7 span;
+    }
+
+    &__agent {
+        background-color: violet;
+        grid-column: 5 span;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    &__link {
+        border-radius: var(--rounded-sm);
+
+        &:nth-child(5) {
+            position: relative;
+
+            &::before {
+                @include pseudo;
+                inset: 0;
+                z-index: 1;
+                background-color: var(--dark-30);
+                border-radius: var(--rounded-sm);
+            }
+        }
+
+        &:nth-child(n + 6) {
+            display: none;
+        }
+    }
+
+    &__link-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: var(--white-500);
+    }
+
+    &__img {
+        background-color: var(--gray-20);
+        border-radius: var(--rounded-sm);
+    }
+}
+
+.tabs {}
+
+.agent-details {}
