@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('blocks/head.html',{"title": "Product"})
+
+<body class="body">
+    <div class="wrapper">
+        @@include('blocks/header.html')
+        <main class="main">
+
+            <section class="product">
+                <div class="container">
+                    <nav class="product__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="/">
+                                    Home
+                                    <svg class="icon icon--chevron-right">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="/property.html">
+                                    Properties
+                                    <svg class="icon icon--chevron-right">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link">Elegant Villa sale in Miami</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="product__hero"
+                     style="background-image: image-set(url('./../img/product/img-3.webp') 1x,
+                                                url('./../img/product/img-3@2x.webp') 2x);">
+                </div>
+
+                <div class="container">
+                    <div class="product__gallery">
+                        <a href="./../img/product-gallery/1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="./../img/product-gallery/thumbnail/thumb-1.jpg" />
+                        </a>
+                        <a href="./../img/product-gallery/1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="./../img/product-gallery/thumbnail/thumb-1.jpg" />
+                        </a>
+                        <a href="./../img/product-gallery/1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="./../img/product-gallery/thumbnail/thumb-1.jpg" />
+                        </a>
+                        <a href="./../img/product-gallery/1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="./../img/product-gallery/thumbnail/thumb-1.jpg" />
+                        </a>
+                        <a href="./../img/product-gallery/1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="./../img/product-gallery/thumbnail/thumb-1.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="product__body">
+                        <div class="product__heading">
+                            <h1 class="product__title">
+                                Beton Elegant Villa
+                            </h1>
+                            <div class="product__address">
+                                <a href="">3891 Ranchview Dr. Richardson, California 62639</a>
+                            </div>
+                            <div class="product__price">
+                                $7500000
+                            </div>
+                            <ul class="product__actions">
+                                <li class="product__actions-item">
+                                    <button class="product__btn btn btn--outline btn--xl btn--with-icon" type="button">
+                                        <svg class="icon icon--plus">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__actions-item">
+                                    <button class="product__btn btn btn--outline btn--xl btn--with-icon" type="button">
+                                        <svg class="icon icon--heart">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__actions-item">
+                                    <button class="product__btn btn btn--outline btn--xl btn--with-icon" type="button">
+                                        <svg class="icon icon--share">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#share"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product__tabs tabs"></div>
+
+                        <div class="product__agent agent-details"></div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <div class="overlay"></div>
+        </main>
+        <!-- @@include('blocks/footer.html') -->
+    </div>
+    <script src="./js/product.bundle.js"></script>
+</body>
+
+</html>

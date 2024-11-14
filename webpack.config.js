@@ -11,7 +11,8 @@ const config = {
         favourite: './src/js/favourite.js',
         contacts: './src/js/contacts.js',
         privacyPolicy: './src/js/privacyPolicy.js',
-        property: './src/js/property.js'
+        property: './src/js/property.js',
+        product: './src/js/product.js'
     },
     output: {
         filename: '[name].bundle.js',
