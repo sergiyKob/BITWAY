@@ -46,6 +46,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
 		"@fancyapps/ui": "^5.0.35",
+		"air-datepicker": "^3.5.3",
 		"avif-webp-checker": "^1.0.0",
 		"nouislider": "^15.8.1",
 		"swiper": "^11.0.6"

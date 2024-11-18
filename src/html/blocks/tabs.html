@@ -266,11 +266,84 @@
         </div>
     </div>
     <div class="tabs__content" data-content="tab-4">
-        <h3>About seller</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ullam iusto aliquam! Adipisci, omnis. Dicta impedit, maiores beatae adipisci culpa in quas eaque eos
-        consequatur minima, veniam dolorum non consequuntur sit architecto repellendus voluptatum eligendi corrupti quaerat repudiandae excepturi. Consequatur maxime, ullam odit
-        totam, unde aliquid cum quibusdam earum laudantium doloribus quisquam reiciendis possimus aliquam? Reiciendis maxime dolores sunt numquam quisquam a harum voluptas enim
-        atque. Odit, earum sequi labore molestiae cupiditate at illum sunt voluptate voluptatum sapiente est quaerat minus nisi, in assumenda, ad nihil quisquam saepe ipsam nemo!
-        Possimus quibusdam quasi impedit sequi excepturi repudiandae libero necessitatibus id!
+        <div class="schedule">
+            <form class="schedule__form" action="#">
+                <label class="schedule__date form-label">
+                    <span class="form-label__label">
+                        Date
+                    </span>
+                    <input
+                           class="form-input"
+                           type="text"
+                           id="date"
+                           name="date"
+                           placeholder="Select Date"
+                           data-language='en'
+                           required>
+                </label>
+                <label class="schedule__time form-label">
+                    <span class="form-label__label">
+                        Time
+                    </span>
+                    <input
+                           class="form-input"
+                           type="text"
+                           id="time"
+                           name="time"
+                           placeholder="Select Time"
+                           required>
+                </label>
+                <label class="form-label">
+                    <span class="form-label__label">
+                        Name
+                    </span>
+                    <input
+                           class="form-input"
+                           type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter Your Name"
+                           required>
+                </label>
+                <label class="form-label">
+                    <span class="form-label__label">
+                        Email
+                    </span>
+                    <input
+                           class="form-input"
+                           type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter Your Email"
+                           required>
+                </label>
+                <label class="form-label">
+                    <span class="form-label__label">
+                        Phone Number
+                    </span>
+                    <input
+                           class="form-input"
+                           type="tel"
+                           id="phone"
+                           name="phone"
+                           placeholder="Enter Phone Number"
+                           required>
+                </label>
+                <label class="form-label">
+                    <span class="form-label__label">
+                        Message
+                    </span>
+                    <textarea
+                              class="schedule__textarea form-input"
+                              name="textarea"
+                              id="textarea"
+                              placeholder="Enter Your Message" required>
+                    </textarea>
+                </label>
+                <button class="schedule__btn btn btn--primary btn--xl" type="submit">
+                    Submit Request
+                </button>
+            </form>
+        </div>
     </div>
 </div>

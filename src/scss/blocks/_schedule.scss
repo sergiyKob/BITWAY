@@ -1,0 +1,53 @@
+.schedule {
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__date,
+    &__time {
+        position: relative;
+
+        &::after {
+            @include pseudo;
+            @include imgBg;
+            width: 24px;
+            height: 24px;
+            right: 16px;
+            bottom: 15px;
+        }
+
+        .form-input {
+            padding-right: 55px;
+        }
+    }
+
+    &__date {
+        &::after {
+            background-image: url('./../img/icons/calendar.svg');
+        }
+    }
+
+    &__time {
+        &::after {
+            background-image: url('./../img/icons/clock.svg');
+        }
+    }
+
+    &__textarea {
+        resize: vertical;
+        min-height: 215px;
+    }
+
+    &__btn {
+        max-width: 210px;
+    }
+
+    .form-label {
+        &:not(:nth-child(-n+2)) {
+            grid-column: span 2;
+        }
+    }
+
+}

@@ -7,3 +7,6 @@ gallery();
 import tabs from './modules/tabs.js';
 tabs();
 
+import datePicker from './modules/date-picker.js';
+datePicker();
+
