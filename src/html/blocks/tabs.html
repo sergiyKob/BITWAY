@@ -167,8 +167,103 @@
         </div>
     </div>
     <div class="tabs__content" data-content="tab-3">
-        <h3>Shipping</h3>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt adipisci quia suscipit fugit ut molestiae.
+        <div class="calculator">
+            <form class="calculator__form" action="#">
+                <div class="calculator__top">
+                    <div class="calculator__result">
+                        <span>$8000</span> /Month
+                    </div>
+                    <div class="calculator__progress">
+                        <div class="calculator__progress-interest"></div>
+                        <div class="calculator__progress-insurance"></div>
+                    </div>
+                    <div class="calculator__descr calculator__descr--interest">
+                        Principle & Interest
+                    </div>
+                    <div class="calculator__descr calculator__descr--insurance">
+                        Home Insurance
+                    </div>
+                </div>
+                <fieldset class="calculator__inputs">
+                    <label class="form-label">
+                        <span class="form-label__label">
+                            Loan Amount
+                        </span>
+                        <input
+                               class="form-input"
+                               type="number"
+                               id="loan-amount"
+                               name="loan-amount"
+                               placeholder="5000000"
+                               required>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label__label">
+                            Down Payment
+                        </span>
+                        <input
+                               class="form-input"
+                               type="number"
+                               id="down-payment"
+                               name="down-payment"
+                               placeholder="2500000"
+                               required>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label__label">
+                            Interest Rate
+                        </span>
+                        <input
+                               class="form-input"
+                               type="number"
+                               id="interest-rate"
+                               name="interest-rate"
+                               placeholder="8.5"
+                               required>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label__label">
+                            Loan Terms (Years)
+                        </span>
+                        <input
+                               class="form-input"
+                               type="number"
+                               id="loan-terms-years"
+                               name="loan-terms-years"
+                               placeholder="20"
+                               required>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label__label">
+                            Home Insurance
+                        </span>
+                        <input
+                               class="form-input"
+                               type="number"
+                               id="home-insurance"
+                               name="home-insurance"
+                               placeholder="20000"
+                               required>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label__label">
+                            Property Tax
+                        </span>
+                        <input
+                               class="form-input"
+                               type="number"
+                               id="property-tax"
+                               name="property-tax"
+                               placeholder="2000"
+                               required>
+                    </label>
+                </fieldset>
+
+                <button class="calculator__btn btn btn--primary btn--xl" type="submit">
+                    Calculate
+                </button>
+            </form>
+        </div>
     </div>
     <div class="tabs__content" data-content="tab-4">
         <h3>About seller</h3>
