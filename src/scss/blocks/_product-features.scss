@@ -1,0 +1,94 @@
+.product-features {
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--gray-20);
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+        background-color: var(--white-500);
+        padding: 60px 20px 20px;
+        text-align: center;
+        border-radius: var(--rounded-sm);
+        box-shadow: 0 55px 110px 0 rgba(0, 0, 0, 0.01), 0 55px 110px 0 rgba(0, 0, 0, 0.03);
+
+        &::before {
+            @include pseudo;
+            @include imgBg;
+            width: 30px;
+            height: 30px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__item--pool {
+        &::before {
+            background-image: url('./../img/icons/pool.svg');
+        }
+    }
+
+    &__item--security {
+        &::before {
+            background-image: url('./../img/icons/security.svg');
+        }
+    }
+
+    &__item--parking {
+        &::before {
+            background-image: url('./../img/icons/parking.svg');
+        }
+    }
+
+    &__item--lift {
+        &::before {
+            background-image: url('./../img/icons/lift.svg');
+        }
+    }
+
+    &__item--games {
+        &::before {
+            background-image: url('./../img/icons/games.svg');
+        }
+    }
+
+    &__item--wifi {
+        &::before {
+            background-image: url('./../img/icons/wifi.svg');
+        }
+    }
+
+    &__item--sit {
+        &::before {
+            background-image: url('./../img/icons/sit.svg');
+        }
+    }
+
+    &__item--gym {
+        &::before {
+            background-image: url('./../img/icons/gym.svg');
+        }
+    }
+
+    &__item--water {
+        &::before {
+            background-image: url('./../img/icons/water.svg');
+        }
+    }
+}

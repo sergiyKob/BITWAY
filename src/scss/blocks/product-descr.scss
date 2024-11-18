@@ -27,23 +27,3 @@
 
     &__img {}
 }
-
-
-
-.details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px 40px;
-
-    &__item {
-        display: flex;
-        gap: 20px;
-        align-items: flex-start;
-    }
-
-    &__label {
-        flex-grow: 1;
-        max-width: 60%;
-        font-weight: 700;
-    }
-}
