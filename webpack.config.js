@@ -6,7 +6,7 @@ const config = {
         agents: './src/js/agents.js',
         login: './src/js/login.js',
         signup: './src/js/signup.js',
-        forgotPassword: './src/js/forgot-password.js',
+        forgotPassword: './src/js/forgotPassword.js',
         verifyCode: './src/js/verifyCode.js',
         favourite: './src/js/favourite.js',
         contacts: './src/js/contacts.js',

@@ -13,6 +13,10 @@
         @include imgBg;
         height: clamp(12.5rem, -1.346rem + 61.54vw, 42.5rem); // 200px-680px
         background-color: var(--gray-20);
+
+        @include tablet-sm {
+            margin-bottom: 15px;
+        }
     }
 
     &__body {
@@ -20,12 +24,18 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 50px 30px;
+
+        @include tablet-sm {
+            transform: translateY(0);
+        }
     }
 
     &__gallery,
     &__heading {
         grid-column: 12 span;
     }
+
+    &__gallery {}
 
     &__heading {
         display: grid;

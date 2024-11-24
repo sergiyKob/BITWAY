@@ -1,3 +1,5 @@
+import preloader from './modules/preloader.js';
+preloader();
 
 import modal from './modules/modal.js';
 modal();

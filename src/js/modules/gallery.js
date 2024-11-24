@@ -6,9 +6,9 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 function gallery() {
     Fancybox.bind('[data-fancybox]', {
-        Thumbs: {
-            type: "classic",
-        },
+        // Thumbs: {
+        //     type: "classic",
+        // },
     });
 }
 
