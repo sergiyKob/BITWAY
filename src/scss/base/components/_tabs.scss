@@ -5,13 +5,17 @@
         gap: 30px;
         margin-bottom: 20px;
         border-bottom: 1px solid var(--gray-20);
+        overflow-x: auto;
+        text-wrap: nowrap;
     }
-
-    &__item {}
 
     &__btn {
         font-size: 20px;
         padding: 12px 0;
+
+        @include mobile {
+            font-size: 16px;
+        }
 
     }
 

@@ -21,6 +21,10 @@
         .form-input {
             padding-right: 55px;
         }
+
+        @include mobile {
+            grid-column: span 2;
+        }
     }
 
     &__date {
@@ -42,6 +46,11 @@
 
     &__btn {
         max-width: 210px;
+
+        @include mobile {
+            max-width: 100%;
+            grid-column: span 2;
+        }
     }
 
     .form-label {

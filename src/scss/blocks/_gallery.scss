@@ -1,16 +1,20 @@
 .gallery {
     display: grid;
-    // grid-template-columns: repeat(5, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 
     @include tablet-sm {
         gap: 10px;
     }
 
-    @include mobile {}
+    @include mobile {
+        display: flex;
+        margin-bottom: 30px;
+        overflow-x: auto;
+    }
 
     &__link {
+        display: block;
         border-radius: var(--rounded-sm);
 
         &:nth-child(5) {
@@ -28,6 +32,10 @@
         &:nth-child(n + 6) {
             display: none;
         }
+
+        @include mobile {
+            min-width: 90px;
+        }
     }
 
     &__link-text {
@@ -35,17 +43,13 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        z-index: 2;
         color: var(--white-500);
         text-align: center;
+        z-index: 2;
     }
 
     &__img {
         background-color: var(--gray-20);
         border-radius: var(--rounded-sm);
-
-        @include desktop {
-            width: 100%;
-        }
     }
 }

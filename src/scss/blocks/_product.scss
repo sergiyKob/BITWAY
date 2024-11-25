@@ -20,13 +20,16 @@
     }
 
     &__body {
-        transform: translateY(-62px);
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 50px 30px;
 
         @include tablet-sm {
             transform: translateY(0);
+        }
+
+        @include tablet {
+            gap: 20px 0;
         }
     }
 
@@ -35,19 +38,34 @@
         grid-column: 12 span;
     }
 
-    &__gallery {}
+    &__gallery {
+        transform: translateY(-62px);
+
+        @include mobile {
+            transform: translateY(0);
+        }
+    }
 
     &__heading {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 20px;
         border-bottom: 1px solid var(--gray-20);
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 10px;
+        }
     }
 
     &__title {
         font-family: var(--font-second);
         font-size: 30px;
         margin-bottom: 10px;
+
+        @include mobile {
+            font-size: 24px;
+        }
     }
 
     &__address {
@@ -78,6 +96,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+
+        @include mobile {
+            grid-column: 1 / -1;
+            grid-row: 4 / 5;
+            justify-self: start;
+        }
     }
 
     &__actions-item {}
@@ -86,9 +110,18 @@
 
     &__tabs {
         grid-column: 7 span;
+
+        @include tablet {
+            grid-column: 12 span;
+        }
     }
 
     &__agent {
         grid-column: 5 span;
+
+        @include tablet {
+            grid-column: 12 span;
+            padding: 20px 0 0 0;
+        }
     }
 }

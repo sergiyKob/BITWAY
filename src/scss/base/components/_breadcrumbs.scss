@@ -7,4 +7,9 @@
         align-items: center;
         gap: 5px;
     }
+
+    &__list {
+        overflow-x: auto;
+        text-wrap: nowrap;
+    }
 }

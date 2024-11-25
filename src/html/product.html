@@ -11,7 +11,7 @@
             <section class="product">
                 <div class="container">
                     <nav class="product__breadcrumbs breadcrumbs">
-                        <ul class="breadcrumbs__list">
+                        <ul class="breadcrumbs__list hidden-scrollbar">
                             <li class="breadcrumbs__item">
                                 <a class="breadcrumbs__link" href="/">
                                     Home
@@ -40,40 +40,37 @@
                 </div>
 
                 <div class="container">
+                    <div class="product__gallery gallery hidden-scrollbar">
+                        <a class="gallery__link" href="./../img/product-gallery/1.webp" data-fancybox="gallery" data-caption="Living room">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-1.jpg" width="215" height="125" alt="Living room" />
+                        </a>
+                        <a class="gallery__link" href="./../img/product-gallery/2.webp" data-fancybox="gallery" data-caption="Bedroom">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-2.jpg" width="215" height="125" alt="Bedroom" />
+                        </a>
+                        <a class="gallery__link" href="./../img/product-gallery/3.webp" data-fancybox="gallery" data-caption="Living room">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-3.jpg" width="215" height="125" alt="Living room" />
+                        </a>
+                        <a class="gallery__link" href="./../img/product-gallery/4.webp" data-fancybox="gallery" data-caption="Living room">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-4.jpg" width="215" height="125" alt="Living room" />
+                        </a>
+                        <a class="gallery__link" href="./../img/product-gallery/5.webp" data-fancybox="gallery" data-caption="Bedroom">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-5.jpg" width="215" height="125" alt="Bedroom" />
+                            <span class="gallery__link-text title title--md">+3 More</span>
+                        </a>
+                        <a class="gallery__link" href="./../img/product-gallery/6.webp" data-fancybox="gallery" data-caption="Back yard">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-6.jpg" width="215" height="125" alt="white house with pool" />
+                        </a>
+                        <a class="gallery__link" href="./../img/product-gallery/7.webp" data-fancybox="gallery" data-caption="Living room">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-7.jpg" width="215" height="125" alt="Living room" />
+                        </a>
+                        <a class="gallery__link" href="./../img/product-gallery/8.webp" data-fancybox="gallery" data-caption="Swimming pool">
+                            <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-8.jpg" width="215" height="125"
+                                 alt="white house with pool and palm trees" />
+                        </a>
+                    </div>
                     <div class="product__body">
-                        <div class="product__gallery">
-                            <div class="gallery">
-                                <a class="gallery__link" href="./../img/product-gallery/1.webp" data-fancybox="gallery" data-caption="Living room">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-1.jpg" width="215" height="125" alt="Living room" />
-                                </a>
-                                <a class="gallery__link" href="./../img/product-gallery/2.webp" data-fancybox="gallery" data-caption="Bedroom">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-2.jpg" width="215" height="125" alt="Bedroom" />
-                                </a>
-                                <a class="gallery__link" href="./../img/product-gallery/3.webp" data-fancybox="gallery" data-caption="Living room">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-3.jpg" width="215" height="125" alt="Living room" />
-                                </a>
-                                <a class="gallery__link" href="./../img/product-gallery/4.webp" data-fancybox="gallery" data-caption="Living room">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-4.jpg" width="215" height="125" alt="Living room" />
-                                </a>
-                                <a class="gallery__link" href="./../img/product-gallery/5.webp" data-fancybox="gallery" data-caption="Bedroom">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-5.jpg" width="215" height="125" alt="Bedroom" />
-                                    <span class="gallery__link-text title title--md">+3 More</span>
-                                </a>
 
-                                <a class="gallery__link" href="./../img/product-gallery/6.webp" data-fancybox="gallery" data-caption="Back yard">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-6.jpg" width="215" height="125" alt="white house with pool" />
-                                </a>
-                                <a class="gallery__link" href="./../img/product-gallery/7.webp" data-fancybox="gallery" data-caption="Living room">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-7.jpg" width="215" height="125" alt="Living room" />
-                                </a>
-                                <a class="gallery__link" href="./../img/product-gallery/8.webp" data-fancybox="gallery" data-caption="Swimming pool">
-                                    <img class="gallery__img" src="./../img/product-gallery/thumbnail/thumb-8.jpg" width="215" height="125"
-                                         alt="white house with pool and palm trees" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- <div class="product__heading">
+                        <div class="product__heading">
                             <h1 class="product__title title">
                                 Beton Elegant Villa
                             </h1>
@@ -108,13 +105,13 @@
                                     </button>
                                 </li>
                             </ul>
-                        </div> -->
+                        </div>
 
-                        <!-- <div class="product__tabs">
+                        <div class="product__tabs">
                             @@include('blocks/tabs.html')
-                        </div> -->
+                        </div>
 
-                        <!-- <section class="product__agent agent-details">
+                        <section class="product__agent agent-details">
                             <h2 class="agent-details__title title">
                                 Agent Details
                             </h2>
@@ -192,13 +189,13 @@
                                     Whatsapp
                                 </a>
                             </div>
-                        </section> -->
+                        </section>
                     </div>
                 </div>
             </section>
             <div class="overlay"></div>
         </main>
-        <!-- @@include('blocks/footer.html') -->
+        @@include('blocks/footer.html')
     </div>
     <script src="./js/product.bundle.js"></script>
 </body>
